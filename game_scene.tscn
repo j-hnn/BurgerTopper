@@ -1,0 +1,46 @@
+[gd_scene format=3 uid="uid://s7cm18ky7uh1"]
+
+[node name="GameScene" type="Node2D"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="BackgroundColor" type="ColorRect" parent="CanvasLayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.603922, 0.364706, 0.247059, 1)
+
+[node name="HeadingColor" type="ColorRect" parent="CanvasLayer"]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -576.0
+offset_right = 576.0
+offset_bottom = 128.0
+grow_horizontal = 2
+color = Color(0.74902, 0.505882, 0.392157, 1)
+
+[node name="BurgerHolder" type="ColorRect" parent="CanvasLayer"]
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -76.0
+offset_right = 597.0
+grow_vertical = 0
+color = Color(0.74902, 0.505882, 0.392157, 1)
+
+[node name="TimeText" type="Label" parent="CanvasLayer"]
+offset_right = 353.0
+offset_bottom = 128.0
+theme_override_font_sizes/font_size = 50
+text = "Time"
+
+[node name="HealthText" type="Label" parent="CanvasLayer"]
+offset_left = 766.0
+offset_top = 3.0
+offset_right = 1119.0
+offset_bottom = 131.0
+theme_override_font_sizes/font_size = 50
+text = "Health"
