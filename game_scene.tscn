@@ -1,35 +1,37 @@
-[gd_scene format=3 uid="uid://s7cm18ky7uh1"]
+[gd_scene load_steps=6 format=3 uid="uid://s7cm18ky7uh1"]
+
+[ext_resource type="Script" path="res://scripts/game_scene.gd" id="1_0gi2q"]
+[ext_resource type="Texture2D" uid="uid://bkwbty78rub2" path="res://Burger Topper Assets/Button.png" id="1_tc1vd"]
+[ext_resource type="PackedScene" uid="uid://bj3ysk6iv2e2e" path="res://ingred/ingred_1.tscn" id="3_ce7b8"]
+[ext_resource type="PackedScene" uid="uid://s6bayak03idd" path="res://ingred/ingred_0.tscn" id="3_tbdkf"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bim8i"]
+bg_color = Color(0.74902, 0.505882, 0.392157, 1)
+corner_radius_top_right = 25
 
 [node name="GameScene" type="Node2D"]
+script = ExtResource("1_0gi2q")
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
-
-[node name="BackgroundColor" type="ColorRect" parent="CanvasLayer"]
+[node name="BackgroundColor" type="ColorRect" parent="."]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_right = 1152.0
+offset_bottom = 648.0
 grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.603922, 0.364706, 0.247059, 1)
 
-[node name="HeadingColor" type="ColorRect" parent="CanvasLayer"]
+[node name="HeadingColor" type="ColorRect" parent="."]
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -576.0
-offset_right = 576.0
+offset_right = 1152.0
 offset_bottom = 128.0
 grow_horizontal = 2
 color = Color(0.74902, 0.505882, 0.392157, 1)
 
-[node name="BurgerHolder" type="ColorRect" parent="CanvasLayer"]
-anchors_preset = 2
-anchor_top = 1.0
-anchor_bottom = 1.0
-offset_top = -76.0
-offset_right = 597.0
-grow_vertical = 0
-color = Color(0.74902, 0.505882, 0.392157, 1)
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="TimeText" type="Label" parent="CanvasLayer"]
 offset_right = 353.0
@@ -44,3 +46,33 @@ offset_right = 1119.0
 offset_bottom = 131.0
 theme_override_font_sizes/font_size = 50
 text = "Health"
+
+[node name="BurgerHolder" type="Panel" parent="."]
+offset_top = 572.0
+offset_right = 597.0
+offset_bottom = 648.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_bim8i")
+
+[node name="Button" type="Button" parent="."]
+offset_left = 630.0
+offset_top = 271.0
+offset_right = 729.0
+offset_bottom = 467.0
+text = "Button"
+
+[node name="TextureRect" type="TextureRect" parent="Button"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_tc1vd")
+
+[node name="ingred_0" parent="." instance=ExtResource("3_tbdkf")]
+position = Vector2(211, 498)
+
+[node name="ingred_1" parent="." instance=ExtResource("3_ce7b8")]
+position = Vector2(244, 281)
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

@@ -1,1 +1,10 @@
 res://game_scene.tscn
+res://game_scene.gd
+res://ingred1.gd
+res://ingred_1.tscn
+res://ingred/ingred_1.tscn
+res://ingred/ingred_0.tscn
+res://ingred/ingred_0.gd
+res://scripts/ingred_1.gd
+res://scripts/game_scene.gd
+res://scripts/ingred_0.gd
