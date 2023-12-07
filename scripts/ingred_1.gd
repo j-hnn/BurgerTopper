@@ -1,22 +1,26 @@
 class_name food extends Area2D
 
-@export var speed = 150
+signal collision
+var inside = false
+	
+@export var speed = 100
 
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
+func _physics_process(delta):
 	global_position.y += speed * delta
+	print(inside)
 
 
 func _on_body_entered(body):
 	if body is starter:
-		body.die()
+		print("entered body")
+		inside = true
+		collision.emit()
 
 
 func _on_visible_on_screen_notifier_2d_screen_exited():
-	queue_free()
 	print("exited")
+	queue_free()
+
+
+func _on_body_exited(body):
+	inside = false

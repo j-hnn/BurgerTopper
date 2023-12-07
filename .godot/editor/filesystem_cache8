@@ -1,11 +1,10 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1701881842
-game_scene.tscn::PackedScene::1329603554200244312::1701881698::0::1::::<><>::res://scripts/game_scene.gd<>uid://bkwbty78rub2::::res://Burger Topper Assets/Button.png<>uid://s6bayak03idd::::res://ingred/ingred_0.tscn
+::res://::1701968677
+game_scene.tscn::PackedScene::1329603554200244312::1701968523::0::1::::<><>::res://scripts/game_scene.gd<>uid://bkwbty78rub2::::res://Burger Topper Assets/Button.png<>uid://btq36sbea62b8::::res://ingred/ingred_1.tscn<>uid://ch8jlbjqerixc::::res://ingred/ingred_0.tscn
 README.md::TextFile::-1::1701795557::0::1::::<><>::
-ingred_1.tscn::PackedScene::3077412779180801042::1701881908::0::1::::<><>::uid://2es2itqku7gi::::res://Burger Topper Assets/Burger Parts/BigCheese.png<>res://scripts/ingred_1.gd
-::res://Burger Topper Assets/::1701880349
+::res://Burger Topper Assets/::1701968741
 BurgerComplete.png::CompressedTexture2D::6998830885880818392::1701880348::1701880349::1::::<><>::
-Button.png::CompressedTexture2D::92171217331079973::1701880348::1701880349::1::::<><>::
+Button.png::CompressedTexture2D::6322600742231110258::1701968741::1701968741::1::::<><>::
 ColorPalette.png::CompressedTexture2D::8685184559882773820::1701880348::1701880349::1::::<><>::
 TravisIdle.png::CompressedTexture2D::7956012163981055807::1701880348::1701880349::1::::<><>::
 ::res://Burger Topper Assets/Burger Parts/::1701880349
@@ -28,9 +27,10 @@ travisjump6.png::CompressedTexture2D::5288619861301796009::1701880348::170188034
 travisjump7.png::CompressedTexture2D::6588967114784607943::1701880348::1701880349::1::::<><>::
 travisjump8.png::CompressedTexture2D::4052453561352690653::1701880348::1701880349::1::::<><>::
 travisjump9.png::CompressedTexture2D::7577530197823290933::1701880348::1701880349::1::::<><>::
-::res://ingred/::1701881706
-ingred_0.tscn::PackedScene::1327456873902478393::1701881706::0::1::::<><>::uid://be16ktvmsths6::::res://Burger Topper Assets/Burger Parts/BunBottom.png
-::res://scripts/::1701881842
-game_scene.gd::GDScript::-1::1701880972::0::1::::<>Node2D<>::
-ingred_0.gd::GDScript::-1::1701881403::0::1::::<>Sprite2D<>::
-ingred_1.gd::GDScript::-1::1701881908::0::1::::<>Area2D<>::
+::res://ingred/::1701968523
+ingred_0.tscn::PackedScene::5332853902563833656::1701968523::0::1::::<><>::uid://be16ktvmsths6::::res://Burger Topper Assets/Burger Parts/BunBottom.png<>res://scripts/ingred_0.gd
+ingred_1.tscn::PackedScene::3754795139437283943::1701968523::0::1::::<><>::uid://2es2itqku7gi::::res://Burger Topper Assets/Burger Parts/BigCheese.png<>res://scripts/ingred_1.gd
+::res://scripts/::1701968134
+game_scene.gd::GDScript::-1::1701968068::0::1::::<>Node2D<>::
+ingred_0.gd::GDScript::-1::1701967170::0::1::::starter<>CharacterBody2D<>::
+ingred_1.gd::GDScript::-1::1701968134::0::1::::food<>Area2D<>::
