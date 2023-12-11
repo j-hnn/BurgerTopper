@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://bky5w4pv4lkyi"]
+
+[ext_resource type="PackedScene" uid="uid://yhtiq01t2pva" path="res://food/food_2.tscn" id="1_ecxyw"]
+[ext_resource type="Texture2D" uid="uid://2es2itqku7gi" path="res://Burger Topper Assets/Burger Parts/BigCheese.png" id="2_bmr2l"]
+
+[node name="food3" instance=ExtResource("1_ecxyw")]
+
+[node name="Sprite2D" parent="." index="0"]
+texture = ExtResource("2_bmr2l")
+
+[node name="CollisionPolygon2D" parent="." index="1"]
+polygon = PackedVector2Array(-1, -41, 17, -38, 44, -31, 70, -23, 102, -18, 119, -18, 156, -10, 187, -3, 184, 0, 158, 8, 111, 24, 39, 42, 3, 50, -42, 39, -87, 28, -157, 8, -185, 0, -181, -5, -150, -10, -115, -16, -84, -17, -60, -26, -34, -35, -15, -39)

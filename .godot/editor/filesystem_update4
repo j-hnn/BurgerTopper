@@ -1,6 +1,7 @@
-res://ingred/ingred_0.tscn
-res://ingred/ingred_1.tscn
-res://scripts/ingred_1.gd
-res://game_scene.tscn
-res://scripts/ingred_0.gd
-res://scripts/game_scene.gd
+res://food/food_1.tscn
+res://scripts/BurgerLocation.gd
+res://scripts/food_1.gd
+res://scripts/game.gd
+res://food/food_2.tscn
+res://game.tscn
+res://food/food_3.tscn
