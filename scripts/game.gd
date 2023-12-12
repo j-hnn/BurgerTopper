@@ -1,25 +1,38 @@
 extends Node2D
 
-signal pressed
-
 @export var food_scenes: Array[PackedScene] = []
 
 @onready var food_spawn_location = $FoodSpawnLocation
 @onready var food_container = $FoodContainer
 @onready var stack_position = $stack_position
+@onready var countdown_timer = $CountdownTimer
+@onready var time_left = $timeLeft
+@onready var progress_bar = $ProgressBar
 
 var food_number = 0
 var total_burgers = 0
 var speed_multiplier = 1
 var inornot = false
 
+var start_time = 300
+var sec = start_time
+
+func game_time():
+	if sec > 0:
+		sec -= 1
+		time_left.text = str(sec)
+
+func _process(delta):
+	pass
+
 func _ready():
+	countdown_timer.start()
 	spawn_food()
 
 func _on_button_pressed():
 	if inornot == true:
 		update_food()
-		pressed.emit()
+		spawn_food()
 		print("win")
 	else:
 		get_tree().reload_current_scene()
@@ -43,10 +56,16 @@ func _inside_bun(torf):
 		print("gameover")
 
 func update_food():
-	if food_number < len(food_scenes) - 1:
-		food_number += 1
-	else:
-		food_number = 0
+	progress_bar.value += 2.5
+	if total_burgers < 2:
+		if food_number < len(food_scenes) - 1:
+			food_number += 1
+		else:
+			food_number = 0
+			total_burgers += 1
+			speed_multiplier += 0.75
+	elif total_burgers == 2:
+		get_tree().reload_current_scene()
 
-func _button_pressed():
-	pass
+func _on_countdown_timer_timeout():
+	game_time()
