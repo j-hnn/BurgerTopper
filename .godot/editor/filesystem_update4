@@ -11,3 +11,5 @@ res://food/food_8.tscn
 res://scripts/game.gd
 res://README.md
 res://scripts/start_screen.gd
+res://lose_screen.tscn
+res://scripts/food_1.gd

@@ -21,4 +21,5 @@ func _on_area_entered(area):
 func _on_area_exited(area):
 	if area is base:
 		die()
+		get_tree().change_scene_to_file("res://lose_screen.tscn")
 		#inside.emit(false)

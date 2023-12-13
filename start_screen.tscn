@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" path="res://scripts/start_screen.gd" id="1_qbljx"]
 [ext_resource type="Texture2D" uid="uid://odynyou0n0xa" path="res://Burger Topper Assets/tjumpclear/tjump1-removebg-preview.png" id="1_qwg7s"]
+[ext_resource type="StyleBox" uid="uid://de55gdy8bnucx" path="res://button.tres" id="2_43euv"]
 [ext_resource type="Texture2D" uid="uid://h7uaaed3nm7m" path="res://Burger Topper Assets/tjumpclear/tjump2-removebg-preview.png" id="2_ocyxb"]
 [ext_resource type="Texture2D" uid="uid://lx03s6op586a" path="res://Burger Topper Assets/tjumpclear/tjump3-removebg-preview.png" id="3_iykqp"]
 [ext_resource type="Texture2D" uid="uid://v7x4y5sow1si" path="res://Burger Topper Assets/tjumpclear/tjump4-removebg-preview.png" id="4_w0hn5"]
@@ -19,18 +20,6 @@ border_width_top = 5
 border_width_right = 5
 border_width_bottom = 5
 border_color = Color(0.2, 0.12549, 0.0823529, 1)
-corner_radius_top_left = 15
-corner_radius_top_right = 15
-corner_radius_bottom_right = 15
-corner_radius_bottom_left = 15
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_d3uvg"]
-bg_color = Color(0.74902, 0.505882, 0.392157, 1)
-border_width_left = 5
-border_width_top = 5
-border_width_right = 5
-border_width_bottom = 5
-border_color = Color(0.403922, 0.243137, 0.164706, 1)
 corner_radius_top_left = 15
 corner_radius_top_right = 15
 corner_radius_bottom_right = 15
@@ -135,7 +124,9 @@ offset_right = 419.0
 offset_bottom = 622.0
 theme_override_colors/font_color = Color(0.956863, 0.917647, 0.827451, 1)
 theme_override_font_sizes/font_size = 50
-theme_override_styles/normal = SubResource("StyleBoxFlat_d3uvg")
+theme_override_styles/normal = ExtResource("2_43euv")
+theme_override_styles/hover = ExtResource("2_43euv")
+theme_override_styles/pressed = ExtResource("2_43euv")
 text = "Start"
 
 [node name="quit" type="Button" parent="CanvasLayer"]
@@ -145,7 +136,9 @@ offset_right = 823.0
 offset_bottom = 622.0
 theme_override_colors/font_color = Color(0.956863, 0.917647, 0.827451, 1)
 theme_override_font_sizes/font_size = 50
-theme_override_styles/normal = SubResource("StyleBoxFlat_d3uvg")
+theme_override_styles/normal = ExtResource("2_43euv")
+theme_override_styles/hover = ExtResource("2_43euv")
+theme_override_styles/pressed = ExtResource("2_43euv")
 text = "Quit"
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CanvasLayer"]
@@ -153,7 +146,7 @@ position = Vector2(987, 336)
 scale = Vector2(1.50465, 1.5154)
 sprite_frames = SubResource("SpriteFrames_bh48g")
 animation = &"celebrate"
-frame_progress = 0.850092
+frame_progress = 0.468599
 
 [connection signal="pressed" from="CanvasLayer/start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="CanvasLayer/quit" to="." method="_on_quit_pressed"]
