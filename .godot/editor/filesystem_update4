@@ -14,3 +14,4 @@ res://win_screen.tscn
 res://scripts/game.gd
 res://scripts/food_1.gd
 res://scripts/BurgerLocation.gd
+res://burger.tscn

@@ -1,4 +1,4 @@
-[gd_scene load_steps=35 format=3 uid="uid://gwc6fm51hvnl"]
+[gd_scene load_steps=36 format=3 uid="uid://gwc6fm51hvnl"]
 
 [ext_resource type="Script" path="res://scripts/game.gd" id="1_543vs"]
 [ext_resource type="Texture2D" uid="uid://be16ktvmsths6" path="res://Burger Topper Assets/Burger Parts/BunBottom.png" id="1_wc2rg"]
@@ -13,6 +13,7 @@
 [ext_resource type="PackedScene" uid="uid://61msa8v3fddg" path="res://food/food_6.tscn" id="7_86tia"]
 [ext_resource type="PackedScene" uid="uid://bimt1lcjrn34o" path="res://food/food_7.tscn" id="8_ug7vy"]
 [ext_resource type="PackedScene" uid="uid://t7gg4oahcw10" path="res://food/food_8.tscn" id="9_mqv2t"]
+[ext_resource type="PackedScene" uid="uid://dk6nmx21y4pdu" path="res://burger.tscn" id="10_c1urj"]
 [ext_resource type="Texture2D" uid="uid://odynyou0n0xa" path="res://Burger Topper Assets/tjumpclear/tjump1-removebg-preview.png" id="13_h66lj"]
 [ext_resource type="Texture2D" uid="uid://h7uaaed3nm7m" path="res://Burger Topper Assets/tjumpclear/tjump2-removebg-preview.png" id="14_drc52"]
 [ext_resource type="Texture2D" uid="uid://lx03s6op586a" path="res://Burger Topper Assets/tjumpclear/tjump3-removebg-preview.png" id="15_ndua5"]
@@ -100,7 +101,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("21_vrinr")
 }],
-"loop": true,
+"loop": false,
 "name": &"celebrate",
 "speed": 6.0
 }, {
@@ -116,6 +117,7 @@ animations = [{
 [node name="Game" type="Node2D"]
 script = ExtResource("1_543vs")
 food_scenes = Array[PackedScene]([ExtResource("3_5gf8n"), ExtResource("3_bfxn1"), ExtResource("4_2c8qy"), ExtResource("5_vqvw4"), ExtResource("6_3btdn"), ExtResource("7_86tia"), ExtResource("8_ug7vy"), ExtResource("9_mqv2t")])
+burger_scene = Array[PackedScene]([ExtResource("10_c1urj")])
 
 [node name="BackgroundColor" type="ColorRect" parent="."]
 offset_right = 1152.0
@@ -124,7 +126,7 @@ color = Color(0.603922, 0.364706, 0.247059, 1)
 
 [node name="BurgerHolder" type="Label" parent="."]
 offset_top = 554.0
-offset_right = 626.0
+offset_right = 613.0
 offset_bottom = 648.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_w5mx2")
 
@@ -250,6 +252,8 @@ vertical_alignment = 1
 position = Vector2(977, 305)
 sprite_frames = SubResource("SpriteFrames_5w3al")
 animation = &"celebrate"
+
+[node name="CompletedBurgers" type="Node2D" parent="."]
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="SpawnButton" to="." method="_on_spawn_button_pressed"]
