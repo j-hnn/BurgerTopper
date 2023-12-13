@@ -12,7 +12,6 @@ func die():
 
 func _on_area_entered(area):
 	if area is base:
-		die()
 		inside.emit(true)
 
 func _on_area_exited(area):

@@ -11,8 +11,5 @@ res://food/food_8.tscn
 res://start_screen.tscn
 res://lose_screen.tscn
 res://win_screen.tscn
-res://scripts/game.gd
-res://scripts/food_1.gd
-res://scripts/BurgerLocation.gd
 res://burger.tscn
-res://README.md
+res://scripts/food_1.gd

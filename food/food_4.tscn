@@ -10,5 +10,3 @@ texture = ExtResource("2_cgov5")
 
 [node name="CollisionPolygon2D" parent="." index="1"]
 polygon = PackedVector2Array(-90, -47, -54, -33, -21, -24, 8, -25, 35, -30, 61, -31, 90, -32, 98, -39, 129, -37, 144, -39, 157, -39, 169, -30, 169, -21, 146, -23, 125, -9, 108, 4, 145, 9, 157, 8, 177, 33, 178, 48, 164, 40, 148, 46, 137, 55, 108, 55, 91, 45, 59, 37, 1, 33, -56, 28, -94, 30, -152, 42, -175, 27, -165, 18, -168, 5, -167, -2, -143, -5, -128, -5, -125, -11, -93, -5, -78, -4, -103, -23, -116, -13, -134, -16, -138, -24, -142, -35, -136, -45, -119, -46, -112, -40, -102, -48)
-
-[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited" flags=18]

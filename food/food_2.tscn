@@ -10,6 +10,3 @@ texture = ExtResource("2_vmlrl")
 
 [node name="CollisionPolygon2D" parent="." index="1"]
 polygon = PackedVector2Array(-162, 4, -163, 15, -131, 36, -119, 47, -84, 57, -49, 59, -16, 60, 0, 57, 10, 55, 25, 55, 71, 55, 99, 55, 143, 33, 153, 17, 164, 3, 161, -8, 143, -24, 128, -34, 103, -46, 72, -56, 42, -58, 17, -60, -23, -60, -38, -58, -60, -56, -80, -49, -104, -41, -133, -35, -146, -17)
-
-[node name="VisibleOnScreenNotifier2D" parent="." index="2"]
-position = Vector2(0, -74)
