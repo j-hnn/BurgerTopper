@@ -1,5 +1,6 @@
-[gd_scene load_steps=12 format=3 uid="uid://cqp3ypsu2ix72"]
+[gd_scene load_steps=15 format=3 uid="uid://cqp3ypsu2ix72"]
 
+[ext_resource type="Script" path="res://scripts/start_screen.gd" id="1_qbljx"]
 [ext_resource type="Texture2D" uid="uid://odynyou0n0xa" path="res://Burger Topper Assets/tjumpclear/tjump1-removebg-preview.png" id="1_qwg7s"]
 [ext_resource type="Texture2D" uid="uid://h7uaaed3nm7m" path="res://Burger Topper Assets/tjumpclear/tjump2-removebg-preview.png" id="2_ocyxb"]
 [ext_resource type="Texture2D" uid="uid://lx03s6op586a" path="res://Burger Topper Assets/tjumpclear/tjump3-removebg-preview.png" id="3_iykqp"]
@@ -10,6 +11,30 @@
 [ext_resource type="Texture2D" uid="uid://cgjucy2t1dewd" path="res://Burger Topper Assets/tjumpclear/tjump8-removebg-preview.png" id="8_towej"]
 [ext_resource type="Texture2D" uid="uid://2q3mem4qp5fi" path="res://Burger Topper Assets/tjumpclear/tjump9-removebg-preview.png" id="9_isan8"]
 [ext_resource type="Texture2D" uid="uid://kg7vhj6my50s" path="res://Burger Topper Assets/TravisIdle.png" id="10_t8var"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7neop"]
+bg_color = Color(0.913725, 0.835294, 0.796078, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.2, 0.12549, 0.0823529, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_d3uvg"]
+bg_color = Color(0.74902, 0.505882, 0.392157, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.403922, 0.243137, 0.164706, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_bh48g"]
 animations = [{
@@ -79,6 +104,7 @@ animations = [{
 }]
 
 [node name="start_screen" type="Node2D"]
+script = ExtResource("1_qbljx")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
@@ -90,7 +116,44 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.603922, 0.364706, 0.247059, 1)
 
+[node name="BurgerTopper" type="Label" parent="CanvasLayer"]
+offset_left = 33.0
+offset_top = 33.0
+offset_right = 825.0
+offset_bottom = 308.0
+theme_override_colors/font_color = Color(0.0980392, 0.0588235, 0.0392157, 1)
+theme_override_font_sizes/font_size = 100
+theme_override_styles/normal = SubResource("StyleBoxFlat_7neop")
+text = "Burger Topper"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="start" type="Button" parent="CanvasLayer"]
+offset_left = 33.0
+offset_top = 319.0
+offset_right = 419.0
+offset_bottom = 622.0
+theme_override_colors/font_color = Color(0.956863, 0.917647, 0.827451, 1)
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_d3uvg")
+text = "Start"
+
+[node name="quit" type="Button" parent="CanvasLayer"]
+offset_left = 437.0
+offset_top = 319.0
+offset_right = 823.0
+offset_bottom = 622.0
+theme_override_colors/font_color = Color(0.956863, 0.917647, 0.827451, 1)
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_d3uvg")
+text = "Quit"
+
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CanvasLayer"]
-position = Vector2(905, 351)
+position = Vector2(987, 336)
+scale = Vector2(1.50465, 1.5154)
 sprite_frames = SubResource("SpriteFrames_bh48g")
 animation = &"celebrate"
+frame_progress = 0.850092
+
+[connection signal="pressed" from="CanvasLayer/start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="CanvasLayer/quit" to="." method="_on_quit_pressed"]

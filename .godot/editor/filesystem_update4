@@ -10,3 +10,4 @@ res://food/food_7.tscn
 res://food/food_8.tscn
 res://scripts/game.gd
 res://README.md
+res://scripts/start_screen.gd
