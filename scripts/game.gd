@@ -25,9 +25,6 @@ func game_time():
 		time_left.text = str(sec)
 		time_progress_bar.value -= 1
 
-func _process(delta):
-	pass
-
 func _ready():
 	time_progress_bar.value = start_time
 	countdown_timer.start()
@@ -37,7 +34,6 @@ func _on_button_pressed():
 	if inornot == true:
 		update_food()
 		spawn_food()
-		print("win")
 	else:
 		get_tree().reload_current_scene()
 
@@ -51,10 +47,10 @@ func spawn_food():
 	food.inside.connect(_inside_bun)
 	food_container.add_child(food)
 	
+	
 func _inside_bun(torf):
 	if torf == true:
 		inornot = true
-		print("inside")
 	elif torf == false:
 		inornot = false
 		print("gameover")

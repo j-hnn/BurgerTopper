@@ -1,5 +1,5 @@
-res://start_screen.tscn
 res://game.tscn
+res://button.tres
 res://food/food_1.tscn
 res://food/food_2.tscn
 res://food/food_3.tscn
@@ -8,9 +8,9 @@ res://food/food_5.tscn
 res://food/food_6.tscn
 res://food/food_7.tscn
 res://food/food_8.tscn
-res://scripts/game.gd
-res://README.md
-res://scripts/start_screen.gd
+res://start_screen.tscn
 res://lose_screen.tscn
-res://scripts/food_1.gd
 res://win_screen.tscn
+res://scripts/game.gd
+res://scripts/food_1.gd
+res://scripts/BurgerLocation.gd
