@@ -9,6 +9,7 @@ extends Node2D
 @onready var time_left = $timeLeft
 @onready var progress_bar = $ProgressBar
 @onready var time_progress_bar = $TimeProgressBar
+@onready var travis = $travis
 
 var food_number = 0
 var total_burgers = 0
@@ -67,6 +68,7 @@ func update_food():
 			food_number = 0
 			total_burgers += 1
 			speed_multiplier += 0.75
+			travis.play("celebrate")
 	elif total_burgers == 5:
 		get_tree().change_scene_to_file("res://win_screen.tscn")
 

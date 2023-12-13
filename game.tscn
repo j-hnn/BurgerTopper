@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=3 uid="uid://gwc6fm51hvnl"]
+[gd_scene load_steps=35 format=3 uid="uid://gwc6fm51hvnl"]
 
 [ext_resource type="Script" path="res://scripts/game.gd" id="1_543vs"]
 [ext_resource type="Texture2D" uid="uid://be16ktvmsths6" path="res://Burger Topper Assets/Burger Parts/BunBottom.png" id="1_wc2rg"]
@@ -7,11 +7,21 @@
 [ext_resource type="PackedScene" uid="uid://bky5w4pv4lkyi" path="res://food/food_3.tscn" id="4_2c8qy"]
 [ext_resource type="Script" path="res://scripts/BurgerLocation.gd" id="4_oxge7"]
 [ext_resource type="Texture2D" uid="uid://cwcyks6e7wuja" path="res://Burger Topper Assets/Button.png" id="4_tcsed"]
+[ext_resource type="Texture2D" uid="uid://kg7vhj6my50s" path="res://Burger Topper Assets/TravisIdle.png" id="5_66f2q"]
 [ext_resource type="PackedScene" uid="uid://bt44ch3lyiiqc" path="res://food/food_4.tscn" id="5_vqvw4"]
 [ext_resource type="PackedScene" uid="uid://btp6buabqrphh" path="res://food/food_5.tscn" id="6_3btdn"]
 [ext_resource type="PackedScene" uid="uid://61msa8v3fddg" path="res://food/food_6.tscn" id="7_86tia"]
 [ext_resource type="PackedScene" uid="uid://bimt1lcjrn34o" path="res://food/food_7.tscn" id="8_ug7vy"]
 [ext_resource type="PackedScene" uid="uid://t7gg4oahcw10" path="res://food/food_8.tscn" id="9_mqv2t"]
+[ext_resource type="Texture2D" uid="uid://odynyou0n0xa" path="res://Burger Topper Assets/tjumpclear/tjump1-removebg-preview.png" id="13_h66lj"]
+[ext_resource type="Texture2D" uid="uid://h7uaaed3nm7m" path="res://Burger Topper Assets/tjumpclear/tjump2-removebg-preview.png" id="14_drc52"]
+[ext_resource type="Texture2D" uid="uid://lx03s6op586a" path="res://Burger Topper Assets/tjumpclear/tjump3-removebg-preview.png" id="15_ndua5"]
+[ext_resource type="Texture2D" uid="uid://v7x4y5sow1si" path="res://Burger Topper Assets/tjumpclear/tjump4-removebg-preview.png" id="16_yxvva"]
+[ext_resource type="Texture2D" uid="uid://dpvpcr0p62mei" path="res://Burger Topper Assets/tjumpclear/tjump5-removebg-preview.png" id="17_cg874"]
+[ext_resource type="Texture2D" uid="uid://cix57hlksp8gu" path="res://Burger Topper Assets/tjumpclear/tjump6-removebg-preview.png" id="18_khlpg"]
+[ext_resource type="Texture2D" uid="uid://lpy31pjta6ip" path="res://Burger Topper Assets/tjumpclear/tjump7-removebg-preview.png" id="19_845so"]
+[ext_resource type="Texture2D" uid="uid://cgjucy2t1dewd" path="res://Burger Topper Assets/tjumpclear/tjump8-removebg-preview.png" id="20_hhqkh"]
+[ext_resource type="Texture2D" uid="uid://2q3mem4qp5fi" path="res://Burger Topper Assets/tjumpclear/tjump9-removebg-preview.png" id="21_vrinr"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_w5mx2"]
 bg_color = Color(0.74902, 0.505882, 0.392157, 1)
@@ -44,9 +54,6 @@ corner_radius_bottom_left = 15
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_nbrp6"]
 
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_wxft4"]
-load_path = "res://.godot/imported/TravisIdle.png-f80a2fc2565a8005c141913b98014254.ctex"
-
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_20ie8"]
 bg_color = Color(0.301961, 0.180392, 0.121569, 1)
 border_width_left = 4
@@ -62,6 +69,49 @@ border_width_top = 4
 border_width_right = 4
 border_width_bottom = 4
 border_color = Color(0.2, 0.12549, 0.0823529, 1)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_5w3al"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("13_h66lj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_drc52")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_ndua5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_yxvva")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_cg874")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_khlpg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_845so")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_hhqkh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_vrinr")
+}],
+"loop": true,
+"name": &"celebrate",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_66f2q")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
 
 [node name="Game" type="Node2D"]
 script = ExtResource("1_543vs")
@@ -147,11 +197,6 @@ position = Vector2(310, 160)
 [node name="stack_position" type="Marker2D" parent="."]
 position = Vector2(310, 300)
 
-[node name="TravisIdle" type="Sprite2D" parent="."]
-position = Vector2(977, 377)
-scale = Vector2(1.26906, 1.25346)
-texture = SubResource("CompressedTexture2D_wxft4")
-
 [node name="BurgerLocation" type="Area2D" parent="."]
 script = ExtResource("4_oxge7")
 
@@ -200,6 +245,11 @@ theme_override_font_sizes/font_size = 45
 text = "300"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="travis" type="AnimatedSprite2D" parent="."]
+position = Vector2(977, 305)
+sprite_frames = SubResource("SpriteFrames_5w3al")
+animation = &"celebrate"
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="SpawnButton" to="." method="_on_spawn_button_pressed"]
