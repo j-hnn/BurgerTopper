@@ -1,9 +1,9 @@
+ProgressBar
+Label
 AnimatedSprite2D
 Sprite2D
 ColorRect
 CanvasLayer
-ProgressBar
-Label
 Timer
 TextureRect
 Marker2D

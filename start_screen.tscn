@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://cqp3ypsu2ix72"]
+[gd_scene load_steps=12 format=3 uid="uid://cqp3ypsu2ix72"]
 
 [ext_resource type="Texture2D" uid="uid://odynyou0n0xa" path="res://Burger Topper Assets/tjumpclear/tjump1-removebg-preview.png" id="1_qwg7s"]
 [ext_resource type="Texture2D" uid="uid://h7uaaed3nm7m" path="res://Burger Topper Assets/tjumpclear/tjump2-removebg-preview.png" id="2_ocyxb"]
@@ -9,6 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://lpy31pjta6ip" path="res://Burger Topper Assets/tjumpclear/tjump7-removebg-preview.png" id="7_4x4j8"]
 [ext_resource type="Texture2D" uid="uid://cgjucy2t1dewd" path="res://Burger Topper Assets/tjumpclear/tjump8-removebg-preview.png" id="8_towej"]
 [ext_resource type="Texture2D" uid="uid://2q3mem4qp5fi" path="res://Burger Topper Assets/tjumpclear/tjump9-removebg-preview.png" id="9_isan8"]
+[ext_resource type="Texture2D" uid="uid://kg7vhj6my50s" path="res://Burger Topper Assets/TravisIdle.png" id="10_t8var"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_bh48g"]
 animations = [{
@@ -65,8 +66,16 @@ animations = [{
 "texture": ExtResource("1_qwg7s")
 }],
 "loop": true,
-"name": &"new_animation",
+"name": &"celebrate",
 "speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_t8var")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
 }]
 
 [node name="start_screen" type="Node2D"]
@@ -82,7 +91,6 @@ grow_vertical = 2
 color = Color(0.603922, 0.364706, 0.247059, 1)
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CanvasLayer"]
-position = Vector2(817, 331)
+position = Vector2(905, 351)
 sprite_frames = SubResource("SpriteFrames_bh48g")
-animation = &"new_animation"
-frame_progress = 0.156578
+animation = &"celebrate"

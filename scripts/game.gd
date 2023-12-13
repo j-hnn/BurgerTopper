@@ -8,6 +8,7 @@ extends Node2D
 @onready var countdown_timer = $CountdownTimer
 @onready var time_left = $timeLeft
 @onready var progress_bar = $ProgressBar
+@onready var time_progress_bar = $TimeProgressBar
 
 var food_number = 0
 var total_burgers = 0
@@ -21,11 +22,13 @@ func game_time():
 	if sec > 0:
 		sec -= 1
 		time_left.text = str(sec)
+		time_progress_bar.value -= 1
 
 func _process(delta):
 	pass
 
 func _ready():
+	time_progress_bar.value = start_time
 	countdown_timer.start()
 	spawn_food()
 
@@ -57,14 +60,14 @@ func _inside_bun(torf):
 
 func update_food():
 	progress_bar.value += 2.5
-	if total_burgers < 2:
+	if total_burgers < 5:
 		if food_number < len(food_scenes) - 1:
 			food_number += 1
 		else:
 			food_number = 0
 			total_burgers += 1
 			speed_multiplier += 0.75
-	elif total_burgers == 2:
+	elif total_burgers == 5:
 		get_tree().reload_current_scene()
 
 func _on_countdown_timer_timeout():

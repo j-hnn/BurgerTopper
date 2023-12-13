@@ -1,13 +1,13 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1702400963
-game.tscn::PackedScene::466726448566605105::1702400375::0::1::::<><>::res://scripts/game.gd<>uid://be16ktvmsths6::::res://Burger Topper Assets/Burger Parts/BunBottom.png<>uid://cmiirabf5k4eu::::res://food/food_1.tscn<>uid://yhtiq01t2pva::::res://food/food_2.tscn<>uid://bky5w4pv4lkyi::::res://food/food_3.tscn<>res://scripts/BurgerLocation.gd<>uid://cwcyks6e7wuja::::res://Burger Topper Assets/Button.png<>uid://dll7mf18jhomh::::res://Burger Topper Assets/TravisIdle.png<>uid://bt44ch3lyiiqc::::res://food/food_4.tscn<>uid://btp6buabqrphh::::res://food/food_5.tscn<>uid://61msa8v3fddg::::res://food/food_6.tscn<>uid://bimt1lcjrn34o::::res://food/food_7.tscn<>uid://t7gg4oahcw10::::res://food/food_8.tscn
+::res://::1702485389
+game.tscn::PackedScene::466726448566605105::1702401246::0::1::::<><>::res://scripts/game.gd<>uid://be16ktvmsths6::::res://Burger Topper Assets/Burger Parts/BunBottom.png<>uid://cmiirabf5k4eu::::res://food/food_1.tscn<>uid://yhtiq01t2pva::::res://food/food_2.tscn<>uid://bky5w4pv4lkyi::::res://food/food_3.tscn<>res://scripts/BurgerLocation.gd<>uid://cwcyks6e7wuja::::res://Burger Topper Assets/Button.png<>uid://dll7mf18jhomh::::res://Burger Topper Assets/TravisIdle.png<>uid://bt44ch3lyiiqc::::res://food/food_4.tscn<>uid://btp6buabqrphh::::res://food/food_5.tscn<>uid://61msa8v3fddg::::res://food/food_6.tscn<>uid://bimt1lcjrn34o::::res://food/food_7.tscn<>uid://t7gg4oahcw10::::res://food/food_8.tscn
 README.md::TextFile::-1::1701795557::0::1::::<><>::
-start_screen.tscn::PackedScene::5928572283358658727::1702400324::0::1::::<><>::
-::res://Burger Topper Assets/::1702400963
+start_screen.tscn::PackedScene::5928572283358658727::1702401247::0::1::::<><>::uid://odynyou0n0xa::::res://Burger Topper Assets/tjumpclear/tjump1-removebg-preview.png<>uid://h7uaaed3nm7m::::res://Burger Topper Assets/tjumpclear/tjump2-removebg-preview.png<>uid://lx03s6op586a::::res://Burger Topper Assets/tjumpclear/tjump3-removebg-preview.png<>uid://v7x4y5sow1si::::res://Burger Topper Assets/tjumpclear/tjump4-removebg-preview.png<>uid://dpvpcr0p62mei::::res://Burger Topper Assets/tjumpclear/tjump5-removebg-preview.png<>uid://cix57hlksp8gu::::res://Burger Topper Assets/tjumpclear/tjump6-removebg-preview.png<>uid://lpy31pjta6ip::::res://Burger Topper Assets/tjumpclear/tjump7-removebg-preview.png<>uid://cgjucy2t1dewd::::res://Burger Topper Assets/tjumpclear/tjump8-removebg-preview.png<>uid://2q3mem4qp5fi::::res://Burger Topper Assets/tjumpclear/tjump9-removebg-preview.png
+::res://Burger Topper Assets/::1702485389
 BurgerComplete.png::CompressedTexture2D::6998830885880818392::1701880348::1701880349::1::::<><>::
 Button.png::CompressedTexture2D::6322600742231110258::1701968741::1701968741::1::::<><>::
 ColorPalette.png::CompressedTexture2D::8685184559882773820::1701880348::1701880349::1::::<><>::
-TravisIdle.png::CompressedTexture2D::7956012163981055807::1701880348::1701880349::1::::<><>::
+TravisIdle.png::CompressedTexture2D::716255531337415932::1702485362::1702485389::1::::<><>::
 ::res://Burger Topper Assets/Burger Parts/::1701880349
 Bacon.png::CompressedTexture2D::5769574683865127237::1701880348::1701880349::1::::<><>::
 BigCheese.png::CompressedTexture2D::1904497861827580500::1701880348::1701880349::1::::<><>::
@@ -38,16 +38,16 @@ travisjump6.png::CompressedTexture2D::5288619861301796009::1701880348::170188034
 travisjump7.png::CompressedTexture2D::6588967114784607943::1701880348::1701880349::1::::<><>::
 travisjump8.png::CompressedTexture2D::4052453561352690653::1701880348::1701880349::1::::<><>::
 travisjump9.png::CompressedTexture2D::7577530197823290933::1701880348::1701880349::1::::<><>::
-::res://food/::1702400324
-food_1.tscn::PackedScene::5632138609326082208::1702400324::0::1::::<><>::res://scripts/food_1.gd<>uid://2es2itqku7gi::::res://Burger Topper Assets/Burger Parts/BigCheese.png
-food_2.tscn::PackedScene::1700151681006501006::1702400324::0::1::::<><>::uid://cmiirabf5k4eu::::res://food/food_1.tscn<>uid://dln510lsbsjtn::::res://Burger Topper Assets/Burger Parts/Patty.png
-food_3.tscn::PackedScene::3139716530762323944::1702400324::0::1::::<><>::uid://yhtiq01t2pva::::res://food/food_2.tscn<>uid://2es2itqku7gi::::res://Burger Topper Assets/Burger Parts/BigCheese.png
-food_4.tscn::PackedScene::3781640443511647714::1702400324::0::1::::<><>::uid://bky5w4pv4lkyi::::res://food/food_3.tscn<>uid://cog3b1hwh2pjp::::res://Burger Topper Assets/Burger Parts/Bacon.png
-food_5.tscn::PackedScene::3752859442230783705::1702400324::0::1::::<><>::uid://bt44ch3lyiiqc::::res://food/food_4.tscn<>uid://b1qrtyewlx5eq::::res://Burger Topper Assets/Burger Parts/Lettuce.png
-food_6.tscn::PackedScene::2230288774558350912::1702400324::0::1::::<><>::uid://btp6buabqrphh::::res://food/food_5.tscn<>uid://d3lkedvs7f05a::::res://Burger Topper Assets/Burger Parts/Tomato.png
-food_7.tscn::PackedScene::2973904600628808816::1702400324::0::1::::<><>::uid://61msa8v3fddg::::res://food/food_6.tscn<>uid://p7g5vdpgljga::::res://Burger Topper Assets/Burger Parts/SmallCheese.png
-food_8.tscn::PackedScene::1400024678786431589::1702400324::0::1::::<><>::uid://bimt1lcjrn34o::::res://food/food_7.tscn<>uid://b4wgfuxctrxa6::::res://Burger Topper Assets/Burger Parts/BunTop.png
-::res://scripts/::1702400375
+::res://food/::1702401247
+food_1.tscn::PackedScene::5632138609326082208::1702401246::0::1::::<><>::res://scripts/food_1.gd<>uid://2es2itqku7gi::::res://Burger Topper Assets/Burger Parts/BigCheese.png
+food_2.tscn::PackedScene::1700151681006501006::1702401246::0::1::::<><>::uid://cmiirabf5k4eu::::res://food/food_1.tscn<>uid://dln510lsbsjtn::::res://Burger Topper Assets/Burger Parts/Patty.png
+food_3.tscn::PackedScene::3139716530762323944::1702401246::0::1::::<><>::uid://yhtiq01t2pva::::res://food/food_2.tscn<>uid://2es2itqku7gi::::res://Burger Topper Assets/Burger Parts/BigCheese.png
+food_4.tscn::PackedScene::3781640443511647714::1702401246::0::1::::<><>::uid://bky5w4pv4lkyi::::res://food/food_3.tscn<>uid://cog3b1hwh2pjp::::res://Burger Topper Assets/Burger Parts/Bacon.png
+food_5.tscn::PackedScene::3752859442230783705::1702401246::0::1::::<><>::uid://bt44ch3lyiiqc::::res://food/food_4.tscn<>uid://b1qrtyewlx5eq::::res://Burger Topper Assets/Burger Parts/Lettuce.png
+food_6.tscn::PackedScene::2230288774558350912::1702401247::0::1::::<><>::uid://btp6buabqrphh::::res://food/food_5.tscn<>uid://d3lkedvs7f05a::::res://Burger Topper Assets/Burger Parts/Tomato.png
+food_7.tscn::PackedScene::2973904600628808816::1702401247::0::1::::<><>::uid://61msa8v3fddg::::res://food/food_6.tscn<>uid://p7g5vdpgljga::::res://Burger Topper Assets/Burger Parts/SmallCheese.png
+food_8.tscn::PackedScene::1400024678786431589::1702401247::0::1::::<><>::uid://bimt1lcjrn34o::::res://food/food_7.tscn<>uid://b4wgfuxctrxa6::::res://Burger Topper Assets/Burger Parts/BunTop.png
+::res://scripts/::1702401230
 BurgerLocation.gd::GDScript::-1::1702312167::0::1::::base<>Area2D<>::
 food_1.gd::GDScript::-1::1702314344::0::1::::<>Area2D<>::
-game.gd::GDScript::-1::1702400375::0::1::::<>Node2D<>::
+game.gd::GDScript::-1::1702401230::0::1::::<>Node2D<>::

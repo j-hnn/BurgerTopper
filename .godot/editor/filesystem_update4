@@ -1,6 +1,4 @@
-res://food/7.tscn
-res://food/food_8.tscn
-res://food/food_7.tscn
+res://start_screen.tscn
 res://game.tscn
 res://food/food_1.tscn
 res://food/food_2.tscn
@@ -8,5 +6,7 @@ res://food/food_3.tscn
 res://food/food_4.tscn
 res://food/food_5.tscn
 res://food/food_6.tscn
+res://food/food_7.tscn
+res://food/food_8.tscn
 res://scripts/game.gd
-res://start_screen.tscn
+res://README.md
