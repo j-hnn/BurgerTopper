@@ -68,7 +68,7 @@ func update_food():
 			total_burgers += 1
 			speed_multiplier += 0.75
 	elif total_burgers == 5:
-		get_tree().reload_current_scene()
+		get_tree().change_scene_to_file("res://win_screen.tscn")
 
 func _on_countdown_timer_timeout():
 	game_time()

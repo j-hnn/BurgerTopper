@@ -13,3 +13,4 @@ res://README.md
 res://scripts/start_screen.gd
 res://lose_screen.tscn
 res://scripts/food_1.gd
+res://win_screen.tscn

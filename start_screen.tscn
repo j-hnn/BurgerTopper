@@ -146,7 +146,7 @@ position = Vector2(987, 336)
 scale = Vector2(1.50465, 1.5154)
 sprite_frames = SubResource("SpriteFrames_bh48g")
 animation = &"celebrate"
-frame_progress = 0.468599
+frame_progress = 0.904237
 
 [connection signal="pressed" from="CanvasLayer/start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="CanvasLayer/quit" to="." method="_on_quit_pressed"]
