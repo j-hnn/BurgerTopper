@@ -12,7 +12,4 @@ res://start_screen.tscn
 res://lose_screen.tscn
 res://win_screen.tscn
 res://burger.tscn
-res://scripts/food_1.gd
-res://scripts/BurgerLocation.gd
 res://scripts/game.gd
-res://README.md

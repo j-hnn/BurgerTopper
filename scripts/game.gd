@@ -41,9 +41,6 @@ func _on_button_pressed():
 	else:
 		get_tree().reload_current_scene()
 
-func _on_spawn_button_pressed():
-	spawn_food()
-
 func spawn_food():
 	var food = food_scenes[food_number].instantiate()
 	food.speed = food.speed * speed_multiplier

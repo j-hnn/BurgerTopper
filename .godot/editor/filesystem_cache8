@@ -1,123 +1,64 @@
 ea4bc82a6ad023ab7ee23ee620429895
-<<<<<<< HEAD
-::res://::1702573371
-burger_complete.tscn::PackedScene::1617026173137062881::1702573371::0::1::::<><>::uid://c6yjys2k82wii::::res://Burger Topper Assets/BurgerComplete.png
-button.tres::StyleBoxFlat::7503781178946245187::1702571060::0::1::::<><>::
-game.tscn::PackedScene::466726448566605105::1702573370::0::1::::<><>::res://scripts/game.gd<>uid://be16ktvmsths6::::res://Burger Topper Assets/Burger Parts/BunBottom.png<>uid://cmiirabf5k4eu::::res://food/food_1.tscn<>uid://yhtiq01t2pva::::res://food/food_2.tscn<>uid://bky5w4pv4lkyi::::res://food/food_3.tscn<>res://scripts/BurgerLocation.gd<>uid://cwcyks6e7wuja::::res://Burger Topper Assets/Button.png<>uid://kg7vhj6my50s::::res://Burger Topper Assets/TravisIdle.png<>uid://bt44ch3lyiiqc::::res://food/food_4.tscn<>uid://btp6buabqrphh::::res://food/food_5.tscn<>uid://61msa8v3fddg::::res://food/food_6.tscn<>uid://bimt1lcjrn34o::::res://food/food_7.tscn<>uid://t7gg4oahcw10::::res://food/food_8.tscn<>uid://odynyou0n0xa::::res://Burger Topper Assets/tjumpclear/tjump1-removebg-preview.png<>uid://h7uaaed3nm7m::::res://Burger Topper Assets/tjumpclear/tjump2-removebg-preview.png<>uid://lx03s6op586a::::res://Burger Topper Assets/tjumpclear/tjump3-removebg-preview.png<>uid://v7x4y5sow1si::::res://Burger Topper Assets/tjumpclear/tjump4-removebg-preview.png<>uid://dpvpcr0p62mei::::res://Burger Topper Assets/tjumpclear/tjump5-removebg-preview.png<>uid://cix57hlksp8gu::::res://Burger Topper Assets/tjumpclear/tjump6-removebg-preview.png<>uid://lpy31pjta6ip::::res://Burger Topper Assets/tjumpclear/tjump7-removebg-preview.png<>uid://cgjucy2t1dewd::::res://Burger Topper Assets/tjumpclear/tjump8-removebg-preview.png<>uid://2q3mem4qp5fi::::res://Burger Topper Assets/tjumpclear/tjump9-removebg-preview.png<>uid://xbkgjwhcpe38::::res://burger_complete.tscn<>uid://13obvfs2tc18::::res://Burger Topper Assets/butttonSound.mp3<>uid://bxn1iw0835ixi::::res://Burger Topper Assets/burgerComplete.mp3
-lose_screen.tscn::PackedScene::8029151631004797101::1702573371::0::1::::<><>::uid://cqp3ypsu2ix72::::res://start_screen.tscn
-README.md::TextFile::-1::1702486493::0::1::::<><>::
-win_screen.gd::GDScript::-1::1702573437::0::1::::<>Node2D<>::
-start_screen.tscn::PackedScene::5928572283358658727::1702573371::0::1::::<><>::res://scripts/start_screen.gd<>uid://odynyou0n0xa::::res://Burger Topper Assets/tjumpclear/tjump1-removebg-preview.png<>uid://de55gdy8bnucx::::res://button.tres<>uid://h7uaaed3nm7m::::res://Burger Topper Assets/tjumpclear/tjump2-removebg-preview.png<>uid://lx03s6op586a::::res://Burger Topper Assets/tjumpclear/tjump3-removebg-preview.png<>uid://v7x4y5sow1si::::res://Burger Topper Assets/tjumpclear/tjump4-removebg-preview.png<>uid://dpvpcr0p62mei::::res://Burger Topper Assets/tjumpclear/tjump5-removebg-preview.png<>uid://cix57hlksp8gu::::res://Burger Topper Assets/tjumpclear/tjump6-removebg-preview.png<>uid://lpy31pjta6ip::::res://Burger Topper Assets/tjumpclear/tjump7-removebg-preview.png<>uid://cgjucy2t1dewd::::res://Burger Topper Assets/tjumpclear/tjump8-removebg-preview.png<>uid://2q3mem4qp5fi::::res://Burger Topper Assets/tjumpclear/tjump9-removebg-preview.png<>uid://kg7vhj6my50s::::res://Burger Topper Assets/TravisIdle.png
-win_screen.tscn::PackedScene::5253226463447466879::1702573410::0::1::::<><>::uid://dmnm7pfmvptcv::::res://lose_screen.tscn<>uid://dun3e6xxuni8j::::res://Burger Topper Assets/winSound.mp3
-::res://Burger Topper Assets/::1702573350
-burgerComplete.mp3::AudioStreamMP3::4029195122005579334::1702572865::1702572874::1::::<><>::
-BurgerComplete.png::CompressedTexture2D::6998830885880818392::1701880348::1701880349::1::::<><>::
-Button.png::CompressedTexture2D::6322600742231110258::1701968741::1701968741::1::::<><>::
-butttonSound.mp3::AudioStreamMP3::1883565446964194917::1702572715::1702572734::1::::<><>::
-ColorPalette.png::CompressedTexture2D::8685184559882773820::1701880348::1701880349::1::::<><>::
-TravisIdle.png::CompressedTexture2D::716255531337415932::1702485362::1702485389::1::::<><>::
-winSound.mp3::AudioStreamMP3::8591584718442427347::1702573262::1702573350::1::::<><>::
-::res://Burger Topper Assets/Burger Parts/::1701880349
-Bacon.png::CompressedTexture2D::5769574683865127237::1701880348::1701880349::1::::<><>::
-BigCheese.png::CompressedTexture2D::1904497861827580500::1701880348::1701880349::1::::<><>::
-BunBottom.png::CompressedTexture2D::2722750995520174231::1701880348::1701880349::1::::<><>::
-BunTop.png::CompressedTexture2D::4467687776825938995::1701880348::1701880349::1::::<><>::
-Lettuce.png::CompressedTexture2D::4245428049062961336::1701880348::1701880349::1::::<><>::
-Onions.png::CompressedTexture2D::5361166110830184177::1701880348::1701880349::1::::<><>::
-Patty.png::CompressedTexture2D::7960045513221452375::1701880348::1701880349::1::::<><>::
-SmallCheese.png::CompressedTexture2D::1119311726788902856::1701880348::1701880349::1::::<><>::
-Tomato.png::CompressedTexture2D::9147872332213921672::1701880348::1701880349::1::::<><>::
-::res://Burger Topper Assets/tjumpclear/::1702401119
-tjump1-removebg-preview.png::CompressedTexture2D::990318650472114282::1702400954::1702400963::1::::<><>::
-tjump2-removebg-preview.png::CompressedTexture2D::558596339804936068::1702400954::1702400963::1::::<><>::
-tjump3-removebg-preview.png::CompressedTexture2D::821126889376828546::1702400954::1702400963::1::::<><>::
-tjump4-removebg-preview.png::CompressedTexture2D::1541475391127441188::1702400954::1702400963::1::::<><>::
-tjump5-removebg-preview.png::CompressedTexture2D::8256361897205446824::1702400954::1702400963::1::::<><>::
-tjump6-removebg-preview.png::CompressedTexture2D::5383711845157122428::1702400954::1702400963::1::::<><>::
-tjump7-removebg-preview.png::CompressedTexture2D::804551545598500395::1702401111::1702401111::1::::<><>::
-tjump8-removebg-preview.png::CompressedTexture2D::5213773043612337239::1702401116::1702401116::1::::<><>::
-tjump9-removebg-preview.png::CompressedTexture2D::1929850557586837186::1702401119::1702401119::1::::<><>::
-::res://Burger Topper Assets/TravisJump/::1702400963
-travisjump1.png::CompressedTexture2D::8110920232784502385::1701880348::1701880349::1::::<><>::
-travisjump2.png::CompressedTexture2D::3406689126606475667::1701880348::1701880349::1::::<><>::
-travisjump3.png::CompressedTexture2D::8365853987787796772::1701880348::1701880349::1::::<><>::
-travisjump4.png::CompressedTexture2D::5755060559621198196::1701880348::1701880349::1::::<><>::
-travisjump5.png::CompressedTexture2D::2552149578237552727::1701880348::1701880349::1::::<><>::
-travisjump6.png::CompressedTexture2D::5288619861301796009::1701880348::1701880349::1::::<><>::
-travisjump7.png::CompressedTexture2D::6588967114784607943::1701880348::1701880349::1::::<><>::
-travisjump8.png::CompressedTexture2D::4052453561352690653::1701880348::1701880349::1::::<><>::
-travisjump9.png::CompressedTexture2D::7577530197823290933::1701880348::1701880349::1::::<><>::
-::res://food/::1702573370
-food_1.tscn::PackedScene::5632138609326082208::1702573370::0::1::::<><>::res://scripts/food_1.gd<>uid://2es2itqku7gi::::res://Burger Topper Assets/Burger Parts/BigCheese.png
-food_2.tscn::PackedScene::1700151681006501006::1702573370::0::1::::<><>::uid://cmiirabf5k4eu::::res://food/food_1.tscn<>uid://dln510lsbsjtn::::res://Burger Topper Assets/Burger Parts/Patty.png
-food_3.tscn::PackedScene::3139716530762323944::1702573370::0::1::::<><>::uid://yhtiq01t2pva::::res://food/food_2.tscn<>uid://2es2itqku7gi::::res://Burger Topper Assets/Burger Parts/BigCheese.png
-food_4.tscn::PackedScene::3781640443511647714::1702573370::0::1::::<><>::uid://bky5w4pv4lkyi::::res://food/food_3.tscn<>uid://cog3b1hwh2pjp::::res://Burger Topper Assets/Burger Parts/Bacon.png
-food_5.tscn::PackedScene::3752859442230783705::1702573370::0::1::::<><>::uid://bt44ch3lyiiqc::::res://food/food_4.tscn<>uid://b1qrtyewlx5eq::::res://Burger Topper Assets/Burger Parts/Lettuce.png
-food_6.tscn::PackedScene::2230288774558350912::1702573370::0::1::::<><>::uid://btp6buabqrphh::::res://food/food_5.tscn<>uid://d3lkedvs7f05a::::res://Burger Topper Assets/Burger Parts/Tomato.png
-food_7.tscn::PackedScene::2973904600628808816::1702573370::0::1::::<><>::uid://61msa8v3fddg::::res://food/food_6.tscn<>uid://p7g5vdpgljga::::res://Burger Topper Assets/Burger Parts/SmallCheese.png
-food_8.tscn::PackedScene::1400024678786431589::1702573370::0::1::::<><>::uid://bimt1lcjrn34o::::res://food/food_7.tscn<>uid://b4wgfuxctrxa6::::res://Burger Topper Assets/Burger Parts/BunTop.png
-::res://scripts/::1702573326
-BurgerLocation.gd::GDScript::-1::1702312167::0::1::::base<>Area2D<>::
-food_1.gd::GDScript::-1::1702572105::0::1::::<>Area2D<>::
-game.gd::GDScript::-1::1702573148::0::1::::<>Node2D<>::
-start_screen.gd::GDScript::-1::1702573410::0::1::::<>Node2D<>::
-=======
-::res://::1702502772
-burger.tscn::PackedScene::7925958199229625758::1702498357::0::1::::<><>::uid://c6yjys2k82wii::::res://Burger Topper Assets/BurgerComplete.png
-button.tres::StyleBoxFlat::7503781178946245187::1702491830::0::1::::<><>::
-game.tscn::PackedScene::466726448566605105::1702498357::0::1::::<><>::res://scripts/game.gd<>uid://be16ktvmsths6::::res://Burger Topper Assets/Burger Parts/BunBottom.png<>uid://cmiirabf5k4eu::::res://food/food_1.tscn<>uid://yhtiq01t2pva::::res://food/food_2.tscn<>uid://bky5w4pv4lkyi::::res://food/food_3.tscn<>res://scripts/BurgerLocation.gd<>uid://cwcyks6e7wuja::::res://Burger Topper Assets/Button.png<>uid://kg7vhj6my50s::::res://Burger Topper Assets/TravisIdle.png<>uid://bt44ch3lyiiqc::::res://food/food_4.tscn<>uid://btp6buabqrphh::::res://food/food_5.tscn<>uid://61msa8v3fddg::::res://food/food_6.tscn<>uid://bimt1lcjrn34o::::res://food/food_7.tscn<>uid://t7gg4oahcw10::::res://food/food_8.tscn<>uid://dk6nmx21y4pdu::::res://burger.tscn<>uid://odynyou0n0xa::::res://Burger Topper Assets/tjumpclear/tjump1-removebg-preview.png<>uid://h7uaaed3nm7m::::res://Burger Topper Assets/tjumpclear/tjump2-removebg-preview.png<>uid://lx03s6op586a::::res://Burger Topper Assets/tjumpclear/tjump3-removebg-preview.png<>uid://v7x4y5sow1si::::res://Burger Topper Assets/tjumpclear/tjump4-removebg-preview.png<>uid://dpvpcr0p62mei::::res://Burger Topper Assets/tjumpclear/tjump5-removebg-preview.png<>uid://cix57hlksp8gu::::res://Burger Topper Assets/tjumpclear/tjump6-removebg-preview.png<>uid://lpy31pjta6ip::::res://Burger Topper Assets/tjumpclear/tjump7-removebg-preview.png<>uid://cgjucy2t1dewd::::res://Burger Topper Assets/tjumpclear/tjump8-removebg-preview.png<>uid://2q3mem4qp5fi::::res://Burger Topper Assets/tjumpclear/tjump9-removebg-preview.png
-icon.svg::CompressedTexture2D::6276334602111686181::1702491804::1702491810::1::::<><>::
-lose_screen.tscn::PackedScene::8029151631004797101::1702498357::0::1::::<><>::uid://cqp3ypsu2ix72::::res://start_screen.tscn
-README.md::TextFile::-1::1702498306::0::1::::<><>::
-start_screen.tscn::PackedScene::5928572283358658727::1702498357::0::1::::<><>::res://scripts/start_screen.gd<>uid://odynyou0n0xa::::res://Burger Topper Assets/tjumpclear/tjump1-removebg-preview.png<>uid://de55gdy8bnucx::::res://button.tres<>uid://h7uaaed3nm7m::::res://Burger Topper Assets/tjumpclear/tjump2-removebg-preview.png<>uid://lx03s6op586a::::res://Burger Topper Assets/tjumpclear/tjump3-removebg-preview.png<>uid://v7x4y5sow1si::::res://Burger Topper Assets/tjumpclear/tjump4-removebg-preview.png<>uid://dpvpcr0p62mei::::res://Burger Topper Assets/tjumpclear/tjump5-removebg-preview.png<>uid://cix57hlksp8gu::::res://Burger Topper Assets/tjumpclear/tjump6-removebg-preview.png<>uid://lpy31pjta6ip::::res://Burger Topper Assets/tjumpclear/tjump7-removebg-preview.png<>uid://cgjucy2t1dewd::::res://Burger Topper Assets/tjumpclear/tjump8-removebg-preview.png<>uid://2q3mem4qp5fi::::res://Burger Topper Assets/tjumpclear/tjump9-removebg-preview.png<>uid://kg7vhj6my50s::::res://Burger Topper Assets/TravisIdle.png
-win_screen.tscn::PackedScene::5253226463447466879::1702498357::0::1::::<><>::uid://dmnm7pfmvptcv::::res://lose_screen.tscn
-::res://Burger Topper Assets/::1702497928
-BurgerComplete.png::CompressedTexture2D::6998830885880818392::1702491766::1702491766::1::::<><>::
-Button.png::CompressedTexture2D::6322600742231110258::1702491766::1702491766::1::::<><>::
-ColorPalette.png::CompressedTexture2D::8685184559882773820::1702491766::1702491766::1::::<><>::
-TravisIdle.png::CompressedTexture2D::716255531337415932::1702491766::1702491766::1::::<><>::
-::res://Burger Topper Assets/Burger Parts/::1702491776
-Bacon.png::CompressedTexture2D::5769574683865127237::1702491766::1702491766::1::::<><>::
-BigCheese.png::CompressedTexture2D::1904497861827580500::1702491766::1702491766::1::::<><>::
-BunBottom.png::CompressedTexture2D::2722750995520174231::1702491766::1702491766::1::::<><>::
-BunTop.png::CompressedTexture2D::4467687776825938995::1702491766::1702491766::1::::<><>::
-Lettuce.png::CompressedTexture2D::4245428049062961336::1702491766::1702491766::1::::<><>::
-Onions.png::CompressedTexture2D::5361166110830184177::1702491766::1702491766::1::::<><>::
-Patty.png::CompressedTexture2D::7960045513221452375::1702491766::1702491766::1::::<><>::
-SmallCheese.png::CompressedTexture2D::1119311726788902856::1702491766::1702491766::1::::<><>::
-Tomato.png::CompressedTexture2D::9147872332213921672::1702491766::1702491766::1::::<><>::
-::res://Burger Topper Assets/tjumpclear/::1702491776
-tjump1-removebg-preview.png::CompressedTexture2D::990318650472114282::1702491766::1702491766::1::::<><>::
-tjump2-removebg-preview.png::CompressedTexture2D::558596339804936068::1702491766::1702491766::1::::<><>::
-tjump3-removebg-preview.png::CompressedTexture2D::821126889376828546::1702491766::1702491766::1::::<><>::
-tjump4-removebg-preview.png::CompressedTexture2D::1541475391127441188::1702491766::1702491766::1::::<><>::
-tjump5-removebg-preview.png::CompressedTexture2D::8256361897205446824::1702491766::1702491766::1::::<><>::
-tjump6-removebg-preview.png::CompressedTexture2D::5383711845157122428::1702491766::1702491766::1::::<><>::
-tjump7-removebg-preview.png::CompressedTexture2D::804551545598500395::1702491766::1702491766::1::::<><>::
-tjump8-removebg-preview.png::CompressedTexture2D::5213773043612337239::1702491766::1702491766::1::::<><>::
-tjump9-removebg-preview.png::CompressedTexture2D::1929850557586837186::1702491766::1702491766::1::::<><>::
-::res://Burger Topper Assets/TravisJump/::1702491776
-travisjump1.png::CompressedTexture2D::8110920232784502385::1702491766::1702491766::1::::<><>::
-travisjump2.png::CompressedTexture2D::3406689126606475667::1702491766::1702491766::1::::<><>::
-travisjump3.png::CompressedTexture2D::8365853987787796772::1702491766::1702491766::1::::<><>::
-travisjump4.png::CompressedTexture2D::5755060559621198196::1702491766::1702491766::1::::<><>::
-travisjump5.png::CompressedTexture2D::2552149578237552727::1702491766::1702491766::1::::<><>::
-travisjump6.png::CompressedTexture2D::5288619861301796009::1702491766::1702491766::1::::<><>::
-travisjump7.png::CompressedTexture2D::6588967114784607943::1702491766::1702491766::1::::<><>::
-travisjump8.png::CompressedTexture2D::4052453561352690653::1702491766::1702491766::1::::<><>::
-travisjump9.png::CompressedTexture2D::7577530197823290933::1702491766::1702491766::1::::<><>::
-::res://food/::1702498505
-food_1.tscn::PackedScene::5632138609326082208::1702498505::0::1::::<><>::res://scripts/food_1.gd<>uid://2es2itqku7gi::::res://Burger Topper Assets/Burger Parts/BigCheese.png
-food_2.tscn::PackedScene::1700151681006501006::1702498357::0::1::::<><>::uid://cmiirabf5k4eu::::res://food/food_1.tscn<>uid://dln510lsbsjtn::::res://Burger Topper Assets/Burger Parts/Patty.png
-food_3.tscn::PackedScene::3139716530762323944::1702498357::0::1::::<><>::uid://yhtiq01t2pva::::res://food/food_2.tscn<>uid://2es2itqku7gi::::res://Burger Topper Assets/Burger Parts/BigCheese.png
-food_4.tscn::PackedScene::3781640443511647714::1702498357::0::1::::<><>::uid://bky5w4pv4lkyi::::res://food/food_3.tscn<>uid://cog3b1hwh2pjp::::res://Burger Topper Assets/Burger Parts/Bacon.png
-food_5.tscn::PackedScene::3752859442230783705::1702498357::0::1::::<><>::uid://bt44ch3lyiiqc::::res://food/food_4.tscn<>uid://b1qrtyewlx5eq::::res://Burger Topper Assets/Burger Parts/Lettuce.png
-food_6.tscn::PackedScene::2230288774558350912::1702498357::0::1::::<><>::uid://btp6buabqrphh::::res://food/food_5.tscn<>uid://d3lkedvs7f05a::::res://Burger Topper Assets/Burger Parts/Tomato.png
-food_7.tscn::PackedScene::2973904600628808816::1702498357::0::1::::<><>::uid://61msa8v3fddg::::res://food/food_6.tscn<>uid://p7g5vdpgljga::::res://Burger Topper Assets/Burger Parts/SmallCheese.png
-food_8.tscn::PackedScene::1400024678786431589::1702498357::0::1::::<><>::uid://bimt1lcjrn34o::::res://food/food_7.tscn<>uid://b4wgfuxctrxa6::::res://Burger Topper Assets/Burger Parts/BunTop.png
-::res://scripts/::1702498357
-BurgerLocation.gd::GDScript::-1::1702491943::0::1::::base<>Area2D<>::
-food_1.gd::GDScript::-1::1702498357::0::1::::<>Area2D<>::
-game.gd::GDScript::-1::1702498202::0::1::::<>Node2D<>::
-start_screen.gd::GDScript::-1::1702491766::0::1::::<>Node2D<>::
->>>>>>> caae34d3ba557c189a94fb31f9288178349449c5
+::res://::1702593666
+burger.tscn::PackedScene::7925958199229625758::1702593656::0::1::::<><>::uid://c6yjys2k82wii::::res://Burger Topper Assets/BurgerComplete.png
+burger_complete.tscn::PackedScene::1617026173137062881::1702593656::0::1::::<><>::uid://c6yjys2k82wii::::res://Burger Topper Assets/BurgerComplete.png
+button.tres::StyleBoxFlat::7503781178946245187::1702593656::0::1::::<><>::
+game.tscn::PackedScene::466726448566605105::1702593656::0::1::::<><>::res://scripts/game.gd<>uid://be16ktvmsths6::::res://Burger Topper Assets/Burger Parts/BunBottom.png<>uid://cmiirabf5k4eu::::res://food/food_1.tscn<>uid://yhtiq01t2pva::::res://food/food_2.tscn<>uid://bky5w4pv4lkyi::::res://food/food_3.tscn<>res://scripts/BurgerLocation.gd<>uid://cwcyks6e7wuja::::res://Burger Topper Assets/Button.png<>uid://kg7vhj6my50s::::res://Burger Topper Assets/TravisIdle.png<>uid://bt44ch3lyiiqc::::res://food/food_4.tscn<>uid://btp6buabqrphh::::res://food/food_5.tscn<>uid://61msa8v3fddg::::res://food/food_6.tscn<>uid://bimt1lcjrn34o::::res://food/food_7.tscn<>uid://t7gg4oahcw10::::res://food/food_8.tscn<>uid://dk6nmx21y4pdu::::res://burger.tscn<>uid://odynyou0n0xa::::res://Burger Topper Assets/tjumpclear/tjump1-removebg-preview.png<>uid://h7uaaed3nm7m::::res://Burger Topper Assets/tjumpclear/tjump2-removebg-preview.png<>uid://lx03s6op586a::::res://Burger Topper Assets/tjumpclear/tjump3-removebg-preview.png<>uid://v7x4y5sow1si::::res://Burger Topper Assets/tjumpclear/tjump4-removebg-preview.png<>uid://dpvpcr0p62mei::::res://Burger Topper Assets/tjumpclear/tjump5-removebg-preview.png<>uid://cix57hlksp8gu::::res://Burger Topper Assets/tjumpclear/tjump6-removebg-preview.png<>uid://lpy31pjta6ip::::res://Burger Topper Assets/tjumpclear/tjump7-removebg-preview.png<>uid://cgjucy2t1dewd::::res://Burger Topper Assets/tjumpclear/tjump8-removebg-preview.png<>uid://2q3mem4qp5fi::::res://Burger Topper Assets/tjumpclear/tjump9-removebg-preview.png
+icon.svg::CompressedTexture2D::6276334602111686181::1702593656::1702593666::1::::<><>::
+lose_screen.tscn::PackedScene::8029151631004797101::1702593656::0::1::::<><>::uid://cqp3ypsu2ix72::::res://start_screen.tscn
+README.md::TextFile::-1::1702593656::0::1::::<><>::
+start_screen.tscn::PackedScene::5928572283358658727::1702593656::0::1::::<><>::res://scripts/start_screen.gd<>uid://odynyou0n0xa::::res://Burger Topper Assets/tjumpclear/tjump1-removebg-preview.png<>uid://de55gdy8bnucx::::res://button.tres<>uid://h7uaaed3nm7m::::res://Burger Topper Assets/tjumpclear/tjump2-removebg-preview.png<>uid://lx03s6op586a::::res://Burger Topper Assets/tjumpclear/tjump3-removebg-preview.png<>uid://v7x4y5sow1si::::res://Burger Topper Assets/tjumpclear/tjump4-removebg-preview.png<>uid://dpvpcr0p62mei::::res://Burger Topper Assets/tjumpclear/tjump5-removebg-preview.png<>uid://cix57hlksp8gu::::res://Burger Topper Assets/tjumpclear/tjump6-removebg-preview.png<>uid://lpy31pjta6ip::::res://Burger Topper Assets/tjumpclear/tjump7-removebg-preview.png<>uid://cgjucy2t1dewd::::res://Burger Topper Assets/tjumpclear/tjump8-removebg-preview.png<>uid://2q3mem4qp5fi::::res://Burger Topper Assets/tjumpclear/tjump9-removebg-preview.png<>uid://kg7vhj6my50s::::res://Burger Topper Assets/TravisIdle.png
+win_screen.tscn::PackedScene::5253226463447466879::1702593656::0::1::::<><>::uid://dmnm7pfmvptcv::::res://lose_screen.tscn
+::res://Burger Topper Assets/::1702593661
+burgerComplete.mp3::AudioStreamMP3::4029195122005579334::1702593656::1702593656::1::::<><>::
+BurgerComplete.png::CompressedTexture2D::6998830885880818392::1702593656::1702593656::1::::<><>::
+Button.png::CompressedTexture2D::6322600742231110258::1702593656::1702593656::1::::<><>::
+butttonSound.mp3::AudioStreamMP3::1883565446964194917::1702593656::1702593656::1::::<><>::
+ColorPalette.png::CompressedTexture2D::8685184559882773820::1702593656::1702593656::1::::<><>::
+TravisIdle.png::CompressedTexture2D::716255531337415932::1702593656::1702593656::1::::<><>::
+winSound.mp3::AudioStreamMP3::8591584718442427347::1702593656::1702593656::1::::<><>::
+::res://Burger Topper Assets/Burger Parts/::1702593660
+Bacon.png::CompressedTexture2D::5769574683865127237::1702593656::1702593656::1::::<><>::
+BigCheese.png::CompressedTexture2D::1904497861827580500::1702593656::1702593656::1::::<><>::
+BunBottom.png::CompressedTexture2D::2722750995520174231::1702593656::1702593656::1::::<><>::
+BunTop.png::CompressedTexture2D::4467687776825938995::1702593656::1702593656::1::::<><>::
+Lettuce.png::CompressedTexture2D::4245428049062961336::1702593656::1702593656::1::::<><>::
+Onions.png::CompressedTexture2D::5361166110830184177::1702593656::1702593656::1::::<><>::
+Patty.png::CompressedTexture2D::7960045513221452375::1702593656::1702593656::1::::<><>::
+SmallCheese.png::CompressedTexture2D::1119311726788902856::1702593656::1702593656::1::::<><>::
+Tomato.png::CompressedTexture2D::9147872332213921672::1702593656::1702593656::1::::<><>::
+::res://Burger Topper Assets/tjumpclear/::1702593660
+tjump1-removebg-preview.png::CompressedTexture2D::990318650472114282::1702593656::1702593656::1::::<><>::
+tjump2-removebg-preview.png::CompressedTexture2D::558596339804936068::1702593656::1702593656::1::::<><>::
+tjump3-removebg-preview.png::CompressedTexture2D::821126889376828546::1702593656::1702593656::1::::<><>::
+tjump4-removebg-preview.png::CompressedTexture2D::1541475391127441188::1702593656::1702593656::1::::<><>::
+tjump5-removebg-preview.png::CompressedTexture2D::8256361897205446824::1702593656::1702593656::1::::<><>::
+tjump6-removebg-preview.png::CompressedTexture2D::5383711845157122428::1702593656::1702593656::1::::<><>::
+tjump7-removebg-preview.png::CompressedTexture2D::804551545598500395::1702593656::1702593656::1::::<><>::
+tjump8-removebg-preview.png::CompressedTexture2D::5213773043612337239::1702593656::1702593656::1::::<><>::
+tjump9-removebg-preview.png::CompressedTexture2D::1929850557586837186::1702593656::1702593656::1::::<><>::
+::res://Burger Topper Assets/TravisJump/::1702593660
+travisjump1.png::CompressedTexture2D::8110920232784502385::1702593656::1702593656::1::::<><>::
+travisjump2.png::CompressedTexture2D::3406689126606475667::1702593656::1702593656::1::::<><>::
+travisjump3.png::CompressedTexture2D::8365853987787796772::1702593656::1702593656::1::::<><>::
+travisjump4.png::CompressedTexture2D::5755060559621198196::1702593656::1702593656::1::::<><>::
+travisjump5.png::CompressedTexture2D::2552149578237552727::1702593656::1702593656::1::::<><>::
+travisjump6.png::CompressedTexture2D::5288619861301796009::1702593656::1702593656::1::::<><>::
+travisjump7.png::CompressedTexture2D::6588967114784607943::1702593656::1702593656::1::::<><>::
+travisjump8.png::CompressedTexture2D::4052453561352690653::1702593656::1702593656::1::::<><>::
+travisjump9.png::CompressedTexture2D::7577530197823290933::1702593656::1702593656::1::::<><>::
+::res://food/::1702593659
+food_1.tscn::PackedScene::5632138609326082208::1702593656::0::1::::<><>::res://scripts/food_1.gd<>uid://2es2itqku7gi::::res://Burger Topper Assets/Burger Parts/BigCheese.png
+food_2.tscn::PackedScene::1700151681006501006::1702593656::0::1::::<><>::uid://cmiirabf5k4eu::::res://food/food_1.tscn<>uid://dln510lsbsjtn::::res://Burger Topper Assets/Burger Parts/Patty.png
+food_3.tscn::PackedScene::3139716530762323944::1702593656::0::1::::<><>::uid://yhtiq01t2pva::::res://food/food_2.tscn<>uid://2es2itqku7gi::::res://Burger Topper Assets/Burger Parts/BigCheese.png
+food_4.tscn::PackedScene::3781640443511647714::1702593656::0::1::::<><>::uid://bky5w4pv4lkyi::::res://food/food_3.tscn<>uid://cog3b1hwh2pjp::::res://Burger Topper Assets/Burger Parts/Bacon.png
+food_5.tscn::PackedScene::3752859442230783705::1702593656::0::1::::<><>::uid://bt44ch3lyiiqc::::res://food/food_4.tscn<>uid://b1qrtyewlx5eq::::res://Burger Topper Assets/Burger Parts/Lettuce.png
+food_6.tscn::PackedScene::2230288774558350912::1702593656::0::1::::<><>::uid://btp6buabqrphh::::res://food/food_5.tscn<>uid://d3lkedvs7f05a::::res://Burger Topper Assets/Burger Parts/Tomato.png
+food_7.tscn::PackedScene::2973904600628808816::1702593656::0::1::::<><>::uid://61msa8v3fddg::::res://food/food_6.tscn<>uid://p7g5vdpgljga::::res://Burger Topper Assets/Burger Parts/SmallCheese.png
+food_8.tscn::PackedScene::1400024678786431589::1702593656::0::1::::<><>::uid://bimt1lcjrn34o::::res://food/food_7.tscn<>uid://b4wgfuxctrxa6::::res://Burger Topper Assets/Burger Parts/BunTop.png
+::res://scripts/::1702593659
+BurgerLocation.gd::GDScript::-1::1702593656::0::1::::base<>Area2D<>::
+food_1.gd::GDScript::-1::1702593656::0::1::::<>Area2D<>::
+game.gd::GDScript::-1::1702593656::0::1::::<>Node2D<>::
+start_screen.gd::GDScript::-1::1702593656::0::1::::<>Node2D<>::
+win_screen.gd::GDScript::-1::1702593656::0::1::::<>Node2D<>::

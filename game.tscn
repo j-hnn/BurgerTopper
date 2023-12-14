@@ -126,7 +126,7 @@ color = Color(0.603922, 0.364706, 0.247059, 1)
 
 [node name="BurgerHolder" type="Label" parent="."]
 offset_top = 554.0
-offset_right = 613.0
+offset_right = 516.0
 offset_bottom = 648.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_w5mx2")
 
@@ -164,10 +164,11 @@ vertical_alignment = 1
 
 [node name="Button" type="Button" parent="."]
 material = SubResource("CanvasItemMaterial_jwk7x")
-offset_left = 645.0
+offset_left = 500.0
 offset_top = 152.0
-offset_right = 818.0
+offset_right = 673.0
 offset_bottom = 461.0
+scale = Vector2(1.2, 1.2)
 theme_override_styles/normal = SubResource("StyleBoxEmpty_bmi4v")
 theme_override_styles/hover = SubResource("StyleBoxEmpty_xisv4")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_t18ci")
@@ -186,28 +187,21 @@ grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("4_tcsed")
 
-[node name="SpawnButton" type="Button" parent="."]
-offset_left = 644.0
-offset_top = 473.0
-offset_right = 818.0
-offset_bottom = 642.0
-text = "Spawn Enemy"
-
 [node name="FoodSpawnLocation" type="Marker2D" parent="."]
-position = Vector2(310, 160)
+position = Vector2(257, 160)
 
 [node name="stack_position" type="Marker2D" parent="."]
-position = Vector2(310, 300)
+position = Vector2(257, 300)
 
 [node name="BurgerLocation" type="Area2D" parent="."]
 script = ExtResource("4_oxge7")
 
 [node name="Sprite2D" type="Sprite2D" parent="BurgerLocation"]
-position = Vector2(311, 470)
+position = Vector2(257, 471)
 texture = ExtResource("1_wc2rg")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="BurgerLocation"]
-position = Vector2(310, 471)
+position = Vector2(258, 471)
 polygon = PackedVector2Array(-18, 62, 20, 62, 44, 60, 81, 54, 115, 45, 152, 29, 175, 7, 180, -13, 180, -30, 173, -46, 162, -52, 133, -58, 72, -61, 7, -64, -51, -62, -129, -54, -162, -44, -177, -25, -176, -3, -164, 19, -148, 33, -102, 52, -57, 60)
 
 [node name="FoodContainer" type="Node2D" parent="."]
@@ -249,12 +243,12 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="travis" type="AnimatedSprite2D" parent="."]
-position = Vector2(977, 305)
+position = Vector2(908, 351)
+scale = Vector2(1.75, 1.75)
 sprite_frames = SubResource("SpriteFrames_5w3al")
 animation = &"celebrate"
 
 [node name="CompletedBurgers" type="Node2D" parent="."]
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
-[connection signal="pressed" from="SpawnButton" to="." method="_on_spawn_button_pressed"]
 [connection signal="timeout" from="CountdownTimer" to="." method="_on_countdown_timer_timeout"]
