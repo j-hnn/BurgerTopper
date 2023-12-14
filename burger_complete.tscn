@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://xbkgjwhcpe38"]
+
+[ext_resource type="Texture2D" uid="uid://c6yjys2k82wii" path="res://Burger Topper Assets/BurgerComplete.png" id="1_priea"]
+
+[node name="burger_complete" type="TextureRect"]
+offset_left = -57.5
+offset_top = -44.0
+offset_right = 519.5
+offset_bottom = 389.0
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("1_priea")
