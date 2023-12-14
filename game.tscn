@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-[gd_scene load_steps=38 format=3 uid="uid://gwc6fm51hvnl"]
-=======
 [gd_scene load_steps=36 format=3 uid="uid://gwc6fm51hvnl"]
->>>>>>> caae34d3ba557c189a94fb31f9288178349449c5
 
 [ext_resource type="Script" path="res://scripts/game.gd" id="1_543vs"]
 [ext_resource type="Texture2D" uid="uid://be16ktvmsths6" path="res://Burger Topper Assets/Burger Parts/BunBottom.png" id="1_wc2rg"]
@@ -27,9 +23,6 @@
 [ext_resource type="Texture2D" uid="uid://lpy31pjta6ip" path="res://Burger Topper Assets/tjumpclear/tjump7-removebg-preview.png" id="19_845so"]
 [ext_resource type="Texture2D" uid="uid://cgjucy2t1dewd" path="res://Burger Topper Assets/tjumpclear/tjump8-removebg-preview.png" id="20_hhqkh"]
 [ext_resource type="Texture2D" uid="uid://2q3mem4qp5fi" path="res://Burger Topper Assets/tjumpclear/tjump9-removebg-preview.png" id="21_vrinr"]
-[ext_resource type="PackedScene" uid="uid://xbkgjwhcpe38" path="res://burger_complete.tscn" id="23_y3t8f"]
-[ext_resource type="AudioStream" uid="uid://13obvfs2tc18" path="res://Burger Topper Assets/butttonSound.mp3" id="24_qdyqn"]
-[ext_resource type="AudioStream" uid="uid://bxn1iw0835ixi" path="res://Burger Topper Assets/burgerComplete.mp3" id="25_vc6qp"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_w5mx2"]
 bg_color = Color(0.74902, 0.505882, 0.392157, 1)
@@ -124,11 +117,7 @@ animations = [{
 [node name="Game" type="Node2D"]
 script = ExtResource("1_543vs")
 food_scenes = Array[PackedScene]([ExtResource("3_5gf8n"), ExtResource("3_bfxn1"), ExtResource("4_2c8qy"), ExtResource("5_vqvw4"), ExtResource("6_3btdn"), ExtResource("7_86tia"), ExtResource("8_ug7vy"), ExtResource("9_mqv2t")])
-<<<<<<< HEAD
-complete_burger_scenes = Array[PackedScene]([ExtResource("23_y3t8f")])
-=======
 burger_scene = Array[PackedScene]([ExtResource("10_c1urj")])
->>>>>>> caae34d3ba557c189a94fb31f9288178349449c5
 
 [node name="BackgroundColor" type="ColorRect" parent="."]
 offset_right = 1152.0
@@ -137,11 +126,7 @@ color = Color(0.603922, 0.364706, 0.247059, 1)
 
 [node name="BurgerHolder" type="Label" parent="."]
 offset_top = 554.0
-<<<<<<< HEAD
-offset_right = 525.0
-=======
 offset_right = 613.0
->>>>>>> caae34d3ba557c189a94fb31f9288178349449c5
 offset_bottom = 648.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_w5mx2")
 
@@ -179,11 +164,10 @@ vertical_alignment = 1
 
 [node name="Button" type="Button" parent="."]
 material = SubResource("CanvasItemMaterial_jwk7x")
-offset_left = 590.0
-offset_top = 145.0
-offset_right = 763.0
-offset_bottom = 454.0
-scale = Vector2(1.1, 1.1)
+offset_left = 645.0
+offset_top = 152.0
+offset_right = 818.0
+offset_bottom = 461.0
 theme_override_styles/normal = SubResource("StyleBoxEmpty_bmi4v")
 theme_override_styles/hover = SubResource("StyleBoxEmpty_xisv4")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_t18ci")
@@ -202,18 +186,24 @@ grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("4_tcsed")
 
+[node name="SpawnButton" type="Button" parent="."]
+offset_left = 644.0
+offset_top = 473.0
+offset_right = 818.0
+offset_bottom = 642.0
+text = "Spawn Enemy"
+
 [node name="FoodSpawnLocation" type="Marker2D" parent="."]
-position = Vector2(249, 160)
+position = Vector2(310, 160)
 
 [node name="stack_position" type="Marker2D" parent="."]
-position = Vector2(249, 300)
+position = Vector2(310, 300)
 
 [node name="BurgerLocation" type="Area2D" parent="."]
-position = Vector2(-59, 0)
 script = ExtResource("4_oxge7")
 
 [node name="Sprite2D" type="Sprite2D" parent="BurgerLocation"]
-position = Vector2(310, 470)
+position = Vector2(311, 470)
 texture = ExtResource("1_wc2rg")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="BurgerLocation"]
@@ -259,22 +249,12 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="travis" type="AnimatedSprite2D" parent="."]
-position = Vector2(963, 346)
-scale = Vector2(1.85, 1.85)
+position = Vector2(977, 305)
 sprite_frames = SubResource("SpriteFrames_5w3al")
 animation = &"celebrate"
 
-<<<<<<< HEAD
-[node name="CompletedBurgerContainer" type="Node2D" parent="."]
-
-[node name="ButtonSound" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("24_qdyqn")
-
-[node name="BurgerCompleteSound" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("25_vc6qp")
-=======
 [node name="CompletedBurgers" type="Node2D" parent="."]
->>>>>>> caae34d3ba557c189a94fb31f9288178349449c5
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="SpawnButton" to="." method="_on_spawn_button_pressed"]
 [connection signal="timeout" from="CountdownTimer" to="." method="_on_countdown_timer_timeout"]
