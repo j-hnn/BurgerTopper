@@ -11,8 +11,13 @@ res://food/food_8.tscn
 res://start_screen.tscn
 res://lose_screen.tscn
 res://win_screen.tscn
+<<<<<<< HEAD
 res://burger_complete.tscn
 res://scripts/game.gd
 res://scripts/food_1.gd
 res://scripts/start_screen.gd
 res://scripts/win_screen.gd
+=======
+res://burger.tscn
+res://scripts/food_1.gd
+>>>>>>> caae34d3ba557c189a94fb31f9288178349449c5

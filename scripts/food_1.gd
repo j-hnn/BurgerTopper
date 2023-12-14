@@ -6,7 +6,11 @@ signal inside
 
 func _physics_process(delta):
 	global_position.y += speed * delta
+<<<<<<< HEAD
 	
+=======
+
+>>>>>>> caae34d3ba557c189a94fb31f9288178349449c5
 func die():
 	queue_free()
 

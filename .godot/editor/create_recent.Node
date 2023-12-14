@@ -1,20 +1,34 @@
+<<<<<<< HEAD
 AudioStreamPlayer2D
 AudioListener2D
 Node2D
 TextureRect
+=======
+Marker2D
+TextureRect
+CollisionShape2D
+Sprite2D
+Area2D
+Node2D
+Node
+>>>>>>> caae34d3ba557c189a94fb31f9288178349449c5
 AnimatedSprite2D
 Button
 Label
 ProgressBar
-Sprite2D
 ColorRect
 CanvasLayer
 Timer
+<<<<<<< HEAD
 Marker2D
 VisibleOnScreenNotifier2D
 CollisionPolygon2D
 Area2D
 CollisionShape2D
+=======
+VisibleOnScreenNotifier2D
+CollisionPolygon2D
+>>>>>>> caae34d3ba557c189a94fb31f9288178349449c5
 CharacterBody2D
 SpringArm3D
 HBoxContainer
