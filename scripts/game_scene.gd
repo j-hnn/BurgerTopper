@@ -26,7 +26,6 @@ var sec = start_time
 var stack_positions = [460, 432, 412, 399, 354, 319, 317, 304, 255]
 
 func _ready():
-	time_left_bar.value = 300
 	time_left_bar.value = start_time
 	spawn_food()
 

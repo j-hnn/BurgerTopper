@@ -6,7 +6,7 @@
 [node name="win_screen" instance=ExtResource("1_ytwlb")]
 
 [node name="BurgerTopper" parent="CanvasLayer" index="1"]
-theme_override_font_sizes/font_size = 90
+theme_override_font_sizes/font_size = 80
 text = "YOU BEAT TRAVIS"
 
 [node name="AnimatedSprite2D" parent="CanvasLayer" index="4"]
