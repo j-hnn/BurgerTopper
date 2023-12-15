@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ui05678mgaaf"
+path="res://.godot/imported/they-aint-believe-in-us.mp3-d4e9bc4a3a861bde8cdb943abcfa1fc1.mp3str"
+
+[deps]
+
+source_file="res://Burger Topper Assets/Sounds/they-aint-believe-in-us.mp3"
+dest_files=["res://.godot/imported/they-aint-believe-in-us.mp3-d4e9bc4a3a861bde8cdb943abcfa1fc1.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

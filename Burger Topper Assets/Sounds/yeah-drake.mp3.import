@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://4lbclljev775"
+path="res://.godot/imported/yeah-drake.mp3-43e38422e8bd2ae7576c43aa67eb6a32.mp3str"
+
+[deps]
+
+source_file="res://Burger Topper Assets/Sounds/yeah-drake.mp3"
+dest_files=["res://.godot/imported/yeah-drake.mp3-43e38422e8bd2ae7576c43aa67eb6a32.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

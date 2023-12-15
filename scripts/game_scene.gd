@@ -14,11 +14,12 @@ extends Node2D
 @onready var bun_collision_box = $BunBottom/BunCollisionBox
 @onready var timer = $Timer
 @onready var travis = $Travis
+@onready var button_sounds = [$ButtonSound, $ButtonSound2, $ButtonSound3, $ButtonSound4, $ButtonSound5, $ButtonSound6]
 
 var pressed = false
 var inside = false
 var food_number = 0
-var speed_multiplier = 0.75
+var speed_multiplier = 1
 var complete_burger_x = 0
 var total_stacks = 0
 var start_time = 200
@@ -36,6 +37,7 @@ func spawn_food():
 	await get_tree().create_timer(randf_range(0, 2)).timeout
 	var food = food_scene[food_number].instantiate()
 	food.global_position.x = 247
+	food.speed *= speed_multiplier
 	food.inside.connect(_on_food_inside)
 	food_container.add_child(food)
 	
@@ -44,7 +46,7 @@ func _on_food_inside():
 
 func _on_button_pressed():
 	pressed = true
-	$ButtonSound.play()
+	button_sounds.pick_random().play()
 	
 func _process(delta):
 	
@@ -86,6 +88,7 @@ func update_food():
 			$BurgerCompleteSound.play()
 			add_complete_burger()
 			restart_stack()
+			speed_multiplier += 1
 			await get_tree().create_timer(2.7).timeout
 			travis.play("idle")
 	

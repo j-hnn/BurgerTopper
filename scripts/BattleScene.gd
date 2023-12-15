@@ -2,6 +2,8 @@ extends Node2D
 
 @export var burger_attack: Array[PackedScene] = []
 
+@onready var sounds = [$OMG, $YEAH]
+
 var health = 100
 var can_fire = true
 
@@ -15,7 +17,7 @@ func _on_button_pressed():
 func _on_travis_hitbox_area_entered(area):
 	area.queue_free()
 	$Travis.play("celebrate")
-	$OMG.play()
+	sounds.pick_random().play()
 	await get_tree().create_timer(0.75).timeout
 	$Travis.play("idle")
 	can_fire = true

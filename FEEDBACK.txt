@@ -4,3 +4,4 @@ Feedback:
 	- Finish the game [✓]
 	- Change font colors to match theme [✓]
 	- Add sound effects [✓]
+	- Fix hitbox so that it gets bigger with burger [✓]

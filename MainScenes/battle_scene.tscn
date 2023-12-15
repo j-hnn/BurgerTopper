@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=3 uid="uid://7m47yhqg7yes"]
+[gd_scene load_steps=22 format=3 uid="uid://7m47yhqg7yes"]
 
 [ext_resource type="Script" path="res://scripts/BattleScene.gd" id="1_40pmc"]
 [ext_resource type="StyleBox" uid="uid://de55gdy8bnucx" path="res://Styles/button.tres" id="2_8o1u0"]
@@ -16,6 +16,7 @@
 [ext_resource type="Texture2D" uid="uid://2q3mem4qp5fi" path="res://Burger Topper Assets/tjumpclear/tjump9-removebg-preview.png" id="13_tdpd1"]
 [ext_resource type="Texture2D" uid="uid://kg7vhj6my50s" path="res://Burger Topper Assets/TravisIdle.png" id="14_0eklq"]
 [ext_resource type="AudioStream" uid="uid://clp7d5roegi1f" path="res://Burger Topper Assets/Sounds/travisscott-omg.mp3" id="16_ida1e"]
+[ext_resource type="AudioStream" uid="uid://c4mtmqq6s6ck8" path="res://Burger Topper Assets/Sounds/TravisFall.mp3" id="17_xip7g"]
 
 [sub_resource type="SystemFont" id="SystemFont_li8pu"]
 font_names = PackedStringArray("Comic Sans MS")
@@ -115,6 +116,9 @@ shape = SubResource("RectangleShape2D_mds47")
 
 [node name="OMG" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("16_ida1e")
+
+[node name="YEAH" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("17_xip7g")
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
 [connection signal="area_entered" from="TravisHitbox" to="." method="_on_travis_hitbox_area_entered"]

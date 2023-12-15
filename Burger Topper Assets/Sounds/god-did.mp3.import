@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://br8q7cbynaw0t"
+path="res://.godot/imported/god-did.mp3-97b35ee2758a8c131e749ab0a81093a7.mp3str"
+
+[deps]
+
+source_file="res://Burger Topper Assets/Sounds/god-did.mp3"
+dest_files=["res://.godot/imported/god-did.mp3-97b35ee2758a8c131e749ab0a81093a7.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

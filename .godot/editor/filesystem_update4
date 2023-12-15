@@ -19,3 +19,4 @@ res://FEEDBACK.txt
 res://README.md
 res://scripts/game_scene.gd
 res://scripts/burger.gd
+res://scripts/BattleScene.gd

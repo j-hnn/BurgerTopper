@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://2d1pvn2g5ssc"
+path="res://.godot/imported/another_one.mp3-e26d74280ddf2f414b5c1e8015274aec.mp3str"
+
+[deps]
+
+source_file="res://Burger Topper Assets/Sounds/another_one.mp3"
+dest_files=["res://.godot/imported/another_one.mp3-e26d74280ddf2f414b5c1e8015274aec.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

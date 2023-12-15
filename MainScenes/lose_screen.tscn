@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://cqp3ypsu2ix72" path="res://MainScenes/start_screen.tscn" id="1_m3yq0"]
 [ext_resource type="Script" path="res://scripts/lose_screen.gd" id="2_we7qm"]
-[ext_resource type="AudioStream" uid="uid://c4mtmqq6s6ck8" path="res://Burger Topper Assets/Sounds/TravisFall.mp3" id="3_hy1m3"]
+[ext_resource type="AudioStream" uid="uid://d352ujmx6xhro" path="res://Burger Topper Assets/Sounds/lose_song.mp3" id="3_htyju"]
 
 [sub_resource type="SystemFont" id="SystemFont_veafy"]
 font_names = PackedStringArray("Comic Sans MS")
@@ -29,4 +29,4 @@ theme_override_fonts/font = SubResource("SystemFont_rf0lr")
 rotation = -0.0595012
 
 [node name="LoseSound" type="AudioStreamPlayer2D" parent="." index="1"]
-stream = ExtResource("3_hy1m3")
+stream = ExtResource("3_htyju")
