@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://p7g5vdpgljga" path="res://Burger Topper Assets/Burger Parts/SmallCheese.png" id="2_s7knx"]
 
 [node name="food7" instance=ExtResource("1_gfkio")]
+speed = 260
 
 [node name="Sprite2D" parent="." index="0"]
 texture = ExtResource("2_s7knx")

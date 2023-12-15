@@ -6,6 +6,7 @@
 [node name="food0" type="Area2D"]
 collision_mask = 4
 script = ExtResource("1_x2tu0")
+speed = 100
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_dnavp")

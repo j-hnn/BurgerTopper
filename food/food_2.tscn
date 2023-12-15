@@ -3,3 +3,4 @@
 [ext_resource type="PackedScene" uid="uid://v6x2hxhmvf2o" path="res://food/food_0.tscn" id="1_qpnkv"]
 
 [node name="food2" instance=ExtResource("1_qpnkv")]
+speed = 150

@@ -6,4 +6,12 @@ res://MainScenes/burger_complete.tscn
 res://MainScenes/lose_screen.tscn
 res://MainScenes/start_screen.tscn
 res://MainScenes/win_screen.tscn
-res://scripts/game_scene.gd
+res://food/food_0.tscn
+res://food/food_1.tscn
+res://food/food_2.tscn
+res://food/food_3.tscn
+res://food/food_4.tscn
+res://food/food_5.tscn
+res://food/food_6.tscn
+res://food/food_7.tscn
+res://food/food_8.tscn
