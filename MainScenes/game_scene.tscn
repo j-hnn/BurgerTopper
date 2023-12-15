@@ -70,7 +70,7 @@ bg_color = Color(0.74902, 0.505882, 0.392157, 1)
 corner_radius_top_right = 15
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7yoso"]
-size = Vector2(353, 124.5)
+size = Vector2(353, 123)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_erdr5"]
 animations = [{
@@ -245,7 +245,7 @@ texture = ExtResource("4_sk7w8")
 polygon = PackedVector2Array(159, 428, 228, 426, 298, 424, 376, 428, 418, 436, 426, 454, 427, 476, 418, 503, 394, 521, 338, 543, 264, 552, 184, 545, 110, 526, 88, 505, 74, 484, 72, 460, 90, 446, 119, 434, 155, 428)
 
 [node name="BunCollisionBox" type="CollisionShape2D" parent="BunBottom"]
-position = Vector2(250.5, 487.75)
+position = Vector2(250.5, 488.5)
 shape = SubResource("RectangleShape2D_7yoso")
 
 [node name="Travis" type="AnimatedSprite2D" parent="."]

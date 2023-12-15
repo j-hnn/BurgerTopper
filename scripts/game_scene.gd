@@ -13,7 +13,6 @@ extends Node2D
 @onready var time_left_text = $CanvasLayer/Header/TimeLeftText
 @onready var timer = $Timer
 @onready var travis = $Travis
-@onready var bun_hit_box = $BunBottom/BunCollisionBox
 
 var pressed = false
 var inside = false
@@ -68,7 +67,6 @@ func stack_food():
 	food.global_position.x = 247
 	food.global_position.y = stack_positions[food_number]
 	stack_container.add_child(food)
-	
 	
 func update_food():
 	if total_stacks < 5:

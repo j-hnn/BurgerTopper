@@ -16,6 +16,7 @@
 
 [sub_resource type="SystemFont" id="SystemFont_scg84"]
 font_names = PackedStringArray("Comic Sans MS")
+subpixel_positioning = 0
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7neop"]
 bg_color = Color(0.913725, 0.835294, 0.796078, 1)
