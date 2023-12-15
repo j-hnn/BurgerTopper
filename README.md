@@ -10,3 +10,8 @@ Description:
 How to play:
 	Press the button whenever the ingrediant is on the burger
 
+Diversifiers Used:
+	- Monochromatic: monochrome color scheme
+	- Single-Button: there is a single button that you press
+	- Make Music: plays beat when button is pressed
+	- Time: player must finish before time ends
