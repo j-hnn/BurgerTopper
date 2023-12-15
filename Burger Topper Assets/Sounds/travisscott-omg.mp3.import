@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://clp7d5roegi1f"
+path="res://.godot/imported/travisscott-omg.mp3-f074987667fdb53e35395b9b900cd7f0.mp3str"
+
+[deps]
+
+source_file="res://Burger Topper Assets/Sounds/travisscott-omg.mp3"
+dest_files=["res://.godot/imported/travisscott-omg.mp3-f074987667fdb53e35395b9b900cd7f0.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

@@ -1,9 +1,19 @@
-[gd_scene load_steps=2 format=3 uid="uid://dk6nmx21y4pdu"]
+[gd_scene load_steps=4 format=3 uid="uid://dk6nmx21y4pdu"]
 
+[ext_resource type="Script" path="res://scripts/burger.gd" id="1_bxihn"]
 [ext_resource type="Texture2D" uid="uid://c6yjys2k82wii" path="res://Burger Topper Assets/BurgerComplete.png" id="1_wlwt4"]
 
-[node name="burger" type="TextureRect"]
-offset_right = 40.0
-offset_bottom = 40.0
-scale = Vector2(0.2, 0.2)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qn5c2"]
+size = Vector2(209, 267)
+
+[node name="burger" type="Area2D"]
+script = ExtResource("1_bxihn")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(11, 0)
+scale = Vector2(0.8, 0.8)
 texture = ExtResource("1_wlwt4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(94.5, -0.5)
+shape = SubResource("RectangleShape2D_qn5c2")

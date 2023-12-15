@@ -24,3 +24,7 @@ res://MainScenes/lose_screen.tscn
 res://README.md
 res://scripts/lose_screen.gd
 res://MainScenes/burger_complete.tscn
+res://scripts/BattleScene.gd
+res://MainScenes/battle_scene.tscn
+res://MainScenes/burger.tscn
+res://scripts/burger.gd

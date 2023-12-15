@@ -1,19 +1,17 @@
-[gd_scene load_steps=3 format=3 uid="uid://cg3x4woyxjss2"]
+[gd_scene load_steps=3 format=3 uid="uid://c200sav0kt0gj"]
 
-[ext_resource type="Script" path="res://scripts/win_screen.gd" id="1_7a4fb"]
 [ext_resource type="AudioStream" uid="uid://dun3e6xxuni8j" path="res://Burger Topper Assets/Sounds/winSound.mp3" id="1_eyba3"]
+[ext_resource type="PackedScene" uid="uid://dmnm7pfmvptcv" path="res://MainScenes/lose_screen.tscn" id="1_ytwlb"]
 
-[node name="win_screen"]
-script = ExtResource("1_7a4fb")
+[node name="win_screen" instance=ExtResource("1_ytwlb")]
 
 [node name="BurgerTopper" parent="CanvasLayer" index="1"]
-theme_override_font_sizes/font_size = 80
-text = "You defeated Travis!"
+theme_override_font_sizes/font_size = 90
+text = "YOU BEAT TRAVIS"
 
 [node name="AnimatedSprite2D" parent="CanvasLayer" index="4"]
-position = Vector2(984, 347)
-rotation = -2.98145
-frame_progress = 0.468599
+rotation = -2.80211
+frame_progress = 0.904237
 
-[node name="WinSound" type="AudioStreamPlayer2D" parent="." index="1"]
+[node name="LoseSound" parent="." index="1"]
 stream = ExtResource("1_eyba3")

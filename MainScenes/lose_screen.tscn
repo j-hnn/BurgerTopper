@@ -5,6 +5,7 @@
 [ext_resource type="AudioStream" uid="uid://c4mtmqq6s6ck8" path="res://Burger Topper Assets/Sounds/TravisFall.mp3" id="3_hy1m3"]
 
 [node name="lose_screen" instance=ExtResource("1_m3yq0")]
+rotation = 0.201026
 script = ExtResource("2_we7qm")
 
 [node name="BurgerTopper" parent="CanvasLayer" index="1"]
@@ -12,6 +13,9 @@ text = "You Lost!"
 
 [node name="start" parent="CanvasLayer" index="2"]
 text = "Play Again"
+
+[node name="AnimatedSprite2D" parent="CanvasLayer" index="4"]
+rotation = -0.0595012
 
 [node name="LoseSound" type="AudioStreamPlayer2D" parent="." index="1"]
 stream = ExtResource("3_hy1m3")

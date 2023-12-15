@@ -1,0 +1,120 @@
+[gd_scene load_steps=21 format=3 uid="uid://7m47yhqg7yes"]
+
+[ext_resource type="Script" path="res://scripts/BattleScene.gd" id="1_40pmc"]
+[ext_resource type="StyleBox" uid="uid://de55gdy8bnucx" path="res://Styles/button.tres" id="2_8o1u0"]
+[ext_resource type="PackedScene" uid="uid://dk6nmx21y4pdu" path="res://MainScenes/burger.tscn" id="2_tuxvo"]
+[ext_resource type="StyleBox" uid="uid://boa73ecwduw25" path="res://Styles/ProgressBarBack.tres" id="3_km4x2"]
+[ext_resource type="StyleBox" uid="uid://4swqk0xhlfq4" path="res://Styles/ProgressBarFront.tres" id="4_t3d5o"]
+[ext_resource type="Texture2D" uid="uid://odynyou0n0xa" path="res://Burger Topper Assets/tjumpclear/tjump1-removebg-preview.png" id="5_22v44"]
+[ext_resource type="Texture2D" uid="uid://h7uaaed3nm7m" path="res://Burger Topper Assets/tjumpclear/tjump2-removebg-preview.png" id="6_ygu6s"]
+[ext_resource type="Texture2D" uid="uid://lx03s6op586a" path="res://Burger Topper Assets/tjumpclear/tjump3-removebg-preview.png" id="7_j5tiy"]
+[ext_resource type="Texture2D" uid="uid://v7x4y5sow1si" path="res://Burger Topper Assets/tjumpclear/tjump4-removebg-preview.png" id="8_wha3a"]
+[ext_resource type="Texture2D" uid="uid://dpvpcr0p62mei" path="res://Burger Topper Assets/tjumpclear/tjump5-removebg-preview.png" id="9_32u3p"]
+[ext_resource type="Texture2D" uid="uid://cix57hlksp8gu" path="res://Burger Topper Assets/tjumpclear/tjump6-removebg-preview.png" id="10_3iuyk"]
+[ext_resource type="Texture2D" uid="uid://lpy31pjta6ip" path="res://Burger Topper Assets/tjumpclear/tjump7-removebg-preview.png" id="11_qknco"]
+[ext_resource type="Texture2D" uid="uid://cgjucy2t1dewd" path="res://Burger Topper Assets/tjumpclear/tjump8-removebg-preview.png" id="12_xxv34"]
+[ext_resource type="Texture2D" uid="uid://2q3mem4qp5fi" path="res://Burger Topper Assets/tjumpclear/tjump9-removebg-preview.png" id="13_tdpd1"]
+[ext_resource type="Texture2D" uid="uid://kg7vhj6my50s" path="res://Burger Topper Assets/TravisIdle.png" id="14_0eklq"]
+[ext_resource type="AudioStream" uid="uid://clp7d5roegi1f" path="res://Burger Topper Assets/Sounds/travisscott-omg.mp3" id="16_ida1e"]
+
+[sub_resource type="SystemFont" id="SystemFont_li8pu"]
+font_names = PackedStringArray("Comic Sans MS")
+
+[sub_resource type="SystemFont" id="SystemFont_pejqr"]
+font_names = PackedStringArray("Comic Sans MS")
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_iidvt"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_22v44")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_ygu6s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_j5tiy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_wha3a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_32u3p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_3iuyk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_qknco")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_xxv34")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_tdpd1")
+}],
+"loop": false,
+"name": &"celebrate",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("14_0eklq")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mds47"]
+size = Vector2(20, 447)
+
+[node name="BattleScene" type="Node2D"]
+script = ExtResource("1_40pmc")
+burger_attack = Array[PackedScene]([ExtResource("2_tuxvo")])
+
+[node name="Button" type="Button" parent="."]
+offset_left = 30.0
+offset_top = 482.0
+offset_right = 483.0
+offset_bottom = 626.0
+theme_override_colors/font_color = Color(0.956863, 0.917647, 0.898039, 1)
+theme_override_fonts/font = SubResource("SystemFont_li8pu")
+theme_override_font_sizes/font_size = 69
+theme_override_styles/normal = ExtResource("2_8o1u0")
+theme_override_styles/hover = ExtResource("2_8o1u0")
+theme_override_styles/pressed = ExtResource("2_8o1u0")
+theme_override_styles/disabled = ExtResource("2_8o1u0")
+theme_override_styles/focus = ExtResource("2_8o1u0")
+text = "FIRE"
+
+[node name="HealthBar" type="ProgressBar" parent="."]
+offset_left = 9.0
+offset_top = 10.0
+offset_right = 1143.0
+offset_bottom = 119.0
+theme_override_colors/font_color = Color(0.956863, 0.917647, 0.898039, 1)
+theme_override_fonts/font = SubResource("SystemFont_pejqr")
+theme_override_font_sizes/font_size = 69
+theme_override_styles/background = ExtResource("3_km4x2")
+theme_override_styles/fill = ExtResource("4_t3d5o")
+
+[node name="Travis" type="AnimatedSprite2D" parent="."]
+position = Vector2(910, 359)
+scale = Vector2(2, 2)
+sprite_frames = SubResource("SpriteFrames_iidvt")
+animation = &"celebrate"
+
+[node name="TravisHitbox" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TravisHitbox"]
+position = Vector2(803, 385)
+shape = SubResource("RectangleShape2D_mds47")
+
+[node name="BurgerNode" type="Node2D" parent="."]
+
+[node name="OMG" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("16_ida1e")
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="area_entered" from="TravisHitbox" to="." method="_on_travis_hitbox_area_entered"]

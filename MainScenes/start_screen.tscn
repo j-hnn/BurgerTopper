@@ -143,10 +143,11 @@ text = "Quit"
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CanvasLayer"]
 position = Vector2(987, 336)
+rotation = 0.010495
 scale = Vector2(1.50465, 1.5154)
 sprite_frames = SubResource("SpriteFrames_bh48g")
 animation = &"celebrate"
-frame_progress = 0.904237
+frame_progress = 0.433115
 
 [connection signal="pressed" from="CanvasLayer/start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="CanvasLayer/quit" to="." method="_on_quit_pressed"]

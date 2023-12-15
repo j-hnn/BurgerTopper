@@ -99,7 +99,7 @@ func game_time():
 		time_left_text.text = str(sec)
 		time_left_bar.value -= 1
 	if total_stacks == 5:
-		get_tree().change_scene_to_file("res://MainScenes/win_screen.tscn")
+		get_tree().change_scene_to_file("res://MainScenes/battle_scene.tscn")
 
 func add_complete_burger():
 	var burger = completed_Scene[0].instantiate()
