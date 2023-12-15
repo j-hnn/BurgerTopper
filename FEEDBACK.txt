@@ -1,0 +1,6 @@
+Feedback:
+	Christian S.
+	- Add a progress bar for time [✓]
+	- Finish the game [✓]
+	- Change font colors to match theme [✓]
+	- Add sound effects [✓]

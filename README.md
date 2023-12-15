@@ -9,11 +9,4 @@ Description:
 	
 How to play:
 	Press the button whenever the ingrediant is on the burger
-	
-	
-Feedback:
-	Christian S.
-	- Add a progress bar for time [✓]
-	- Finish the game [✓]
-	- Change font colors to match theme [✓]
-	- Add sound effects [✓]
+
