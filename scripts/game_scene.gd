@@ -88,7 +88,7 @@ func update_food():
 			$BurgerCompleteSound.play()
 			add_complete_burger()
 			restart_stack()
-			speed_multiplier += 0.75
+			speed_multiplier += 0.5
 			await get_tree().create_timer(2.7).timeout
 			travis.play("idle")
 	
