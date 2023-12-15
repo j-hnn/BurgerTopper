@@ -1,12 +1,12 @@
-[gd_scene load_steps=3 format=3 uid="uid://61msa8v3fddg"]
+[gd_scene load_steps=3 format=3 uid="uid://bipndavt4oq3b"]
 
-[ext_resource type="PackedScene" uid="uid://btp6buabqrphh" path="res://food/food_5.tscn" id="1_3cgti"]
-[ext_resource type="Texture2D" uid="uid://d3lkedvs7f05a" path="res://Burger Topper Assets/Burger Parts/Tomato.png" id="2_ohjbk"]
+[ext_resource type="PackedScene" uid="uid://cw5gg7hewehkb" path="res://food/food_5.tscn" id="1_lppki"]
+[ext_resource type="Texture2D" uid="uid://d3lkedvs7f05a" path="res://Burger Topper Assets/Burger Parts/Tomato.png" id="2_ul6fo"]
 
-[node name="food6" instance=ExtResource("1_3cgti")]
+[node name="food6" instance=ExtResource("1_lppki")]
 
 [node name="Sprite2D" parent="." index="0"]
-texture = ExtResource("2_ohjbk")
+texture = ExtResource("2_ul6fo")
 
 [node name="CollisionPolygon2D" parent="." index="1"]
-polygon = PackedVector2Array(-23, -40, 18, -41, 54, -39, 78, -29, 97, -13, 95, 5, 88, 23, 58, 39, 5, 46, -35, 41, -76, 36, -92, 27, -98, 8, -96, -7, -86, -16, -68, -28, -41, -36)
+polygon = PackedVector2Array(-78, 37, -8, 47, 40, 45, 78, 33, 99, 8, 95, -17, 77, -34, 31, -42, -36, -35, -73, -19, -91, -2, -95, 21)

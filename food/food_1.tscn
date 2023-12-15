@@ -1,16 +1,12 @@
-[gd_scene load_steps=3 format=3 uid="uid://cmiirabf5k4eu"]
+[gd_scene load_steps=3 format=3 uid="uid://fdo7geuoqktv"]
 
-[ext_resource type="Script" path="res://scripts/food_1.gd" id="1_cmv8x"]
-[ext_resource type="Texture2D" uid="uid://2es2itqku7gi" path="res://Burger Topper Assets/Burger Parts/BigCheese.png" id="1_jd2y0"]
+[ext_resource type="PackedScene" uid="uid://v6x2hxhmvf2o" path="res://food/food_0.tscn" id="1_epgle"]
+[ext_resource type="Texture2D" uid="uid://dln510lsbsjtn" path="res://Burger Topper Assets/Burger Parts/Patty.png" id="2_66l3l"]
 
-[node name="food1" type="Area2D"]
-script = ExtResource("1_cmv8x")
+[node name="food1" instance=ExtResource("1_epgle")]
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("1_jd2y0")
+[node name="Sprite2D" parent="." index="0"]
+texture = ExtResource("2_66l3l")
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
-polygon = PackedVector2Array(-183, -3, -176, 2, -123, 17, -59, 36, -36, 40, -8, 46, 4, 49, 19, 46, 42, 41, 84, 29, 109, 24, 143, 13, 179, 1, 189, -2, 182, -5, 138, -13, 105, -20, 78, -21, 53, -29, 18, -37, 2, -40, -19, -41, -40, -34, -69, -22, -82, -17, -109, -17, -136, -13, -166, -6)
-
-[connection signal="area_entered" from="." to="." method="_on_area_entered"]
-[connection signal="area_exited" from="." to="." method="_on_area_exited"]
+[node name="CollisionPolygon2D" parent="." index="1"]
+polygon = PackedVector2Array(-7, -57, 29, -58, 79, -52, 131, -34, 158, -8, 153, 23, 131, 45, 74, 58, -53, 60, -112, 48, -156, 20, -159, -2, -143, -26, -108, -43, -47, -60)

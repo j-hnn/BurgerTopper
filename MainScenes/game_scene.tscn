@@ -1,0 +1,271 @@
+[gd_scene load_steps=39 format=3 uid="uid://dlrx1tnx2bian"]
+
+[ext_resource type="Script" path="res://scripts/game_scene.gd" id="1_7d7iv"]
+[ext_resource type="StyleBox" uid="uid://dp4750q50v0d" path="res://Styles/HeaderBoxesStyle.tres" id="1_vxe2f"]
+[ext_resource type="PackedScene" uid="uid://v6x2hxhmvf2o" path="res://food/food_0.tscn" id="2_2agbl"]
+[ext_resource type="Texture2D" uid="uid://odynyou0n0xa" path="res://Burger Topper Assets/tjumpclear/tjump1-removebg-preview.png" id="3_opsla"]
+[ext_resource type="PackedScene" uid="uid://fdo7geuoqktv" path="res://food/food_1.tscn" id="3_sjijm"]
+[ext_resource type="Texture2D" uid="uid://h7uaaed3nm7m" path="res://Burger Topper Assets/tjumpclear/tjump2-removebg-preview.png" id="4_5k6f8"]
+[ext_resource type="Script" path="res://scripts/BunBottom.gd" id="4_jf85b"]
+[ext_resource type="Texture2D" uid="uid://be16ktvmsths6" path="res://Burger Topper Assets/Burger Parts/BunBottom.png" id="4_sk7w8"]
+[ext_resource type="PackedScene" uid="uid://btrqfu7wxueub" path="res://food/food_2.tscn" id="4_uv85v"]
+[ext_resource type="Texture2D" uid="uid://lx03s6op586a" path="res://Burger Topper Assets/tjumpclear/tjump3-removebg-preview.png" id="5_wsu7m"]
+[ext_resource type="PackedScene" uid="uid://ohsca07umcui" path="res://food/food_3.tscn" id="5_xilj7"]
+[ext_resource type="PackedScene" uid="uid://blmtsfcf55t6o" path="res://food/food_4.tscn" id="6_8rfxr"]
+[ext_resource type="Texture2D" uid="uid://v7x4y5sow1si" path="res://Burger Topper Assets/tjumpclear/tjump4-removebg-preview.png" id="6_678hi"]
+[ext_resource type="Texture2D" uid="uid://dpvpcr0p62mei" path="res://Burger Topper Assets/tjumpclear/tjump5-removebg-preview.png" id="7_cbaec"]
+[ext_resource type="PackedScene" uid="uid://cw5gg7hewehkb" path="res://food/food_5.tscn" id="7_htkkb"]
+[ext_resource type="Texture2D" uid="uid://cix57hlksp8gu" path="res://Burger Topper Assets/tjumpclear/tjump6-removebg-preview.png" id="8_1m5d3"]
+[ext_resource type="PackedScene" uid="uid://bipndavt4oq3b" path="res://food/food_6.tscn" id="8_4nwfy"]
+[ext_resource type="PackedScene" uid="uid://4tn8fq8oeljr" path="res://food/food_7.tscn" id="9_7ytw5"]
+[ext_resource type="Texture2D" uid="uid://lpy31pjta6ip" path="res://Burger Topper Assets/tjumpclear/tjump7-removebg-preview.png" id="9_ldt72"]
+[ext_resource type="PackedScene" uid="uid://bp78qh8acw5w" path="res://food/food_8.tscn" id="10_0j52i"]
+[ext_resource type="Texture2D" uid="uid://cgjucy2t1dewd" path="res://Burger Topper Assets/tjumpclear/tjump8-removebg-preview.png" id="10_srsf0"]
+[ext_resource type="Texture2D" uid="uid://2q3mem4qp5fi" path="res://Burger Topper Assets/tjumpclear/tjump9-removebg-preview.png" id="11_7172l"]
+[ext_resource type="PackedScene" uid="uid://d20yxk46i3m01" path="res://burger_complete.tscn" id="11_shmeh"]
+[ext_resource type="Texture2D" uid="uid://kg7vhj6my50s" path="res://Burger Topper Assets/TravisIdle.png" id="12_nryqn"]
+[ext_resource type="Texture2D" uid="uid://cwcyks6e7wuja" path="res://Burger Topper Assets/Button.png" id="13_r5adb"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1e36t"]
+bg_color = Color(0.74902, 0.505882, 0.392157, 1)
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
+[sub_resource type="SystemFont" id="SystemFont_jr4eo"]
+font_names = PackedStringArray("Comic Sans MS")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rxf0n"]
+bg_color = Color(0.301961, 0.180392, 0.121569, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.2, 0.12549, 0.0823529, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_v3m72"]
+bg_color = Color(0.403922, 0.243137, 0.164706, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.2, 0.12549, 0.0823529, 1)
+
+[sub_resource type="SystemFont" id="SystemFont_avfbg"]
+font_names = PackedStringArray("Comic Sans MS")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7fawp"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3c2cp"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_axox8"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_g764d"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_hknpb"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5f02m"]
+bg_color = Color(0.74902, 0.505882, 0.392157, 1)
+corner_radius_top_right = 15
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7yoso"]
+size = Vector2(353, 124.5)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_erdr5"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_opsla")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_5k6f8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_wsu7m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_678hi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_cbaec")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_1m5d3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_ldt72")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_srsf0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_7172l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_srsf0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_ldt72")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_cbaec")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_1m5d3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_678hi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_wsu7m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_opsla")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_5k6f8")
+}],
+"loop": false,
+"name": &"celebrate",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("12_nryqn")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[node name="GameScene" type="Node2D"]
+script = ExtResource("1_7d7iv")
+food_scene = Array[PackedScene]([ExtResource("2_2agbl"), ExtResource("3_sjijm"), ExtResource("4_uv85v"), ExtResource("5_xilj7"), ExtResource("6_8rfxr"), ExtResource("7_htkkb"), ExtResource("8_4nwfy"), ExtResource("9_7ytw5"), ExtResource("10_0j52i")])
+completed_Scene = Array[PackedScene]([ExtResource("11_shmeh")])
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Header" type="Label" parent="CanvasLayer"]
+anchors_preset = 10
+anchor_right = 1.0
+offset_right = 1.0
+offset_bottom = 123.0
+grow_horizontal = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_1e36t")
+
+[node name="TimeLeftRect" type="Label" parent="CanvasLayer/Header"]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 604.0
+offset_bottom = 115.0
+theme_override_styles/normal = ExtResource("1_vxe2f")
+
+[node name="Completionrect" type="Label" parent="CanvasLayer/Header"]
+layout_mode = 0
+offset_left = 611.0
+offset_top = 8.0
+offset_right = 1144.0
+offset_bottom = 115.0
+theme_override_styles/normal = ExtResource("1_vxe2f")
+
+[node name="CompletionBar" type="ProgressBar" parent="CanvasLayer/Header"]
+layout_mode = 0
+offset_left = 623.0
+offset_top = 30.0
+offset_right = 1132.0
+offset_bottom = 98.0
+theme_override_colors/font_color = Color(0.956863, 0.917647, 0.898039, 1)
+theme_override_fonts/font = SubResource("SystemFont_jr4eo")
+theme_override_font_sizes/font_size = 35
+theme_override_styles/background = SubResource("StyleBoxFlat_rxf0n")
+theme_override_styles/fill = SubResource("StyleBoxFlat_v3m72")
+
+[node name="TimeLeftBar" type="ProgressBar" parent="CanvasLayer/Header"]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 30.0
+offset_right = 592.0
+offset_bottom = 98.0
+theme_override_styles/background = SubResource("StyleBoxFlat_rxf0n")
+theme_override_styles/fill = SubResource("StyleBoxFlat_v3m72")
+max_value = 200.0
+show_percentage = false
+
+[node name="TimeLeftText" type="Label" parent="CanvasLayer/Header"]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 30.0
+offset_right = 592.0
+offset_bottom = 98.0
+theme_override_colors/font_color = Color(0.956863, 0.917647, 0.898039, 1)
+theme_override_fonts/font = SubResource("SystemFont_avfbg")
+theme_override_font_sizes/font_size = 35
+text = "300 Seconds"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="CanvasLayer"]
+offset_left = 496.0
+offset_top = 164.0
+offset_right = 713.0
+offset_bottom = 549.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_7fawp")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_3c2cp")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_axox8")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_g764d")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_hknpb")
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/Button"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("13_r5adb")
+
+[node name="BurgerHolderRect" type="Label" parent="."]
+offset_top = 563.0
+offset_right = 500.0
+offset_bottom = 648.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_5f02m")
+
+[node name="BunBottom" type="Area2D" parent="."]
+collision_layer = 4
+collision_mask = 0
+script = ExtResource("4_jf85b")
+
+[node name="Sprite2D" type="Sprite2D" parent="BunBottom"]
+position = Vector2(247, 487)
+texture = ExtResource("4_sk7w8")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="BunBottom"]
+polygon = PackedVector2Array(159, 428, 228, 426, 298, 424, 376, 428, 418, 436, 426, 454, 427, 476, 418, 503, 394, 521, 338, 543, 264, 552, 184, 545, 110, 526, 88, 505, 74, 484, 72, 460, 90, 446, 119, 434, 155, 428)
+
+[node name="BunCollisionBox" type="CollisionShape2D" parent="BunBottom"]
+position = Vector2(250.5, 487.75)
+shape = SubResource("RectangleShape2D_7yoso")
+
+[node name="Travis" type="AnimatedSprite2D" parent="."]
+position = Vector2(895, 366)
+scale = Vector2(1.6, 1.6)
+sprite_frames = SubResource("SpriteFrames_erdr5")
+animation = &"celebrate"
+
+[node name="StackContainer" type="Node2D" parent="."]
+
+[node name="FoodContainer" type="Node2D" parent="."]
+
+[node name="CompletedContainer" type="Node2D" parent="."]
+
+[node name="FoodOffMarker" type="Marker2D" parent="."]
+position = Vector2(247, 571)
+
+[node name="CompletedBurgerMarker" type="Marker2D" parent="."]
+position = Vector2(0, 605)
+
+[node name="Timer" type="Timer" parent="."]
+autostart = true
+
+[connection signal="pressed" from="CanvasLayer/Button" to="." method="_on_button_pressed"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

@@ -1,5 +1,13 @@
-res://game.tscn
-res://button.tres
+res://ProgressBarFront.tres
+res://MainScenes/game_scene.tscn
+res://ProgressBarBack.tres
+res://Styles/ProgressBarBack.tres
+res://food/food_0.tscn
+res://scripts/start_screen.gd
+res://scripts/BunBottom.gd
+res://scripts/game_scene.gd
+res://scripts/food_0.gd
+res://lose_screen.tscn
 res://food/food_1.tscn
 res://food/food_2.tscn
 res://food/food_3.tscn
@@ -8,8 +16,4 @@ res://food/food_5.tscn
 res://food/food_6.tscn
 res://food/food_7.tscn
 res://food/food_8.tscn
-res://start_screen.tscn
-res://lose_screen.tscn
-res://win_screen.tscn
-res://burger.tscn
-res://scripts/game.gd
+res://burger_complete.tscn

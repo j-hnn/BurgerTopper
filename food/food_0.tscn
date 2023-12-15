@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://v6x2hxhmvf2o"]
+
+[ext_resource type="Texture2D" uid="uid://2es2itqku7gi" path="res://Burger Topper Assets/Burger Parts/BigCheese.png" id="1_dnavp"]
+[ext_resource type="Script" path="res://scripts/food_0.gd" id="1_x2tu0"]
+
+[node name="food0" type="Area2D"]
+collision_mask = 4
+script = ExtResource("1_x2tu0")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_dnavp")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(0, -39, 36, -34, 71, -23, 105, -19, 154, -11, 188, -4, 184, 1, 107, 27, 8, 50, -42, 40, -137, 13, -184, 2, -183, -3, -164, -6, -114, -15, -83, -18, -59, -26, -29, -35)
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
