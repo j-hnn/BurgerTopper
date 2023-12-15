@@ -1,4 +1,4 @@
-[gd_scene load_steps=39 format=3 uid="uid://dlrx1tnx2bian"]
+[gd_scene load_steps=41 format=3 uid="uid://dlrx1tnx2bian"]
 
 [ext_resource type="Script" path="res://scripts/game_scene.gd" id="1_7d7iv"]
 [ext_resource type="StyleBox" uid="uid://dp4750q50v0d" path="res://Styles/HeaderBoxesStyle.tres" id="1_vxe2f"]
@@ -22,9 +22,11 @@
 [ext_resource type="PackedScene" uid="uid://bp78qh8acw5w" path="res://food/food_8.tscn" id="10_0j52i"]
 [ext_resource type="Texture2D" uid="uid://cgjucy2t1dewd" path="res://Burger Topper Assets/tjumpclear/tjump8-removebg-preview.png" id="10_srsf0"]
 [ext_resource type="Texture2D" uid="uid://2q3mem4qp5fi" path="res://Burger Topper Assets/tjumpclear/tjump9-removebg-preview.png" id="11_7172l"]
-[ext_resource type="PackedScene" uid="uid://d20yxk46i3m01" path="res://burger_complete.tscn" id="11_shmeh"]
+[ext_resource type="PackedScene" uid="uid://d20yxk46i3m01" path="res://MainScenes/burger_complete.tscn" id="11_tbsvi"]
 [ext_resource type="Texture2D" uid="uid://kg7vhj6my50s" path="res://Burger Topper Assets/TravisIdle.png" id="12_nryqn"]
 [ext_resource type="Texture2D" uid="uid://cwcyks6e7wuja" path="res://Burger Topper Assets/Button.png" id="13_r5adb"]
+[ext_resource type="AudioStream" uid="uid://13obvfs2tc18" path="res://Burger Topper Assets/Sounds/butttonSound.mp3" id="26_dmj3i"]
+[ext_resource type="AudioStream" uid="uid://bxn1iw0835ixi" path="res://Burger Topper Assets/Sounds/burgerComplete.mp3" id="27_cfjwl"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1e36t"]
 bg_color = Color(0.74902, 0.505882, 0.392157, 1)
@@ -140,7 +142,7 @@ animations = [{
 [node name="GameScene" type="Node2D"]
 script = ExtResource("1_7d7iv")
 food_scene = Array[PackedScene]([ExtResource("2_2agbl"), ExtResource("3_sjijm"), ExtResource("4_uv85v"), ExtResource("5_xilj7"), ExtResource("6_8rfxr"), ExtResource("7_htkkb"), ExtResource("8_4nwfy"), ExtResource("9_7ytw5"), ExtResource("10_0j52i")])
-completed_Scene = Array[PackedScene]([ExtResource("11_shmeh")])
+completed_Scene = Array[PackedScene]([ExtResource("11_tbsvi")])
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
@@ -266,6 +268,12 @@ position = Vector2(0, 605)
 
 [node name="Timer" type="Timer" parent="."]
 autostart = true
+
+[node name="ButtonSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("26_dmj3i")
+
+[node name="BurgerCompleteSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("27_cfjwl")
 
 [connection signal="pressed" from="CanvasLayer/Button" to="." method="_on_button_pressed"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

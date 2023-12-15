@@ -1,17 +1,17 @@
 [gd_scene load_steps=15 format=3 uid="uid://cqp3ypsu2ix72"]
 
-[ext_resource type="Script" path="res://scripts/start_screen.gd" id="1_qbljx"]
-[ext_resource type="Texture2D" uid="uid://odynyou0n0xa" path="res://Burger Topper Assets/tjumpclear/tjump1-removebg-preview.png" id="1_qwg7s"]
-[ext_resource type="StyleBox" uid="uid://de55gdy8bnucx" path="res://button.tres" id="2_43euv"]
-[ext_resource type="Texture2D" uid="uid://h7uaaed3nm7m" path="res://Burger Topper Assets/tjumpclear/tjump2-removebg-preview.png" id="2_ocyxb"]
-[ext_resource type="Texture2D" uid="uid://lx03s6op586a" path="res://Burger Topper Assets/tjumpclear/tjump3-removebg-preview.png" id="3_iykqp"]
-[ext_resource type="Texture2D" uid="uid://v7x4y5sow1si" path="res://Burger Topper Assets/tjumpclear/tjump4-removebg-preview.png" id="4_w0hn5"]
-[ext_resource type="Texture2D" uid="uid://dpvpcr0p62mei" path="res://Burger Topper Assets/tjumpclear/tjump5-removebg-preview.png" id="5_qqlqa"]
-[ext_resource type="Texture2D" uid="uid://cix57hlksp8gu" path="res://Burger Topper Assets/tjumpclear/tjump6-removebg-preview.png" id="6_2njno"]
-[ext_resource type="Texture2D" uid="uid://lpy31pjta6ip" path="res://Burger Topper Assets/tjumpclear/tjump7-removebg-preview.png" id="7_4x4j8"]
-[ext_resource type="Texture2D" uid="uid://cgjucy2t1dewd" path="res://Burger Topper Assets/tjumpclear/tjump8-removebg-preview.png" id="8_towej"]
-[ext_resource type="Texture2D" uid="uid://2q3mem4qp5fi" path="res://Burger Topper Assets/tjumpclear/tjump9-removebg-preview.png" id="9_isan8"]
-[ext_resource type="Texture2D" uid="uid://kg7vhj6my50s" path="res://Burger Topper Assets/TravisIdle.png" id="10_t8var"]
+[ext_resource type="Script" path="res://scripts/start_screen.gd" id="1_m7ewq"]
+[ext_resource type="StyleBox" uid="uid://de55gdy8bnucx" path="res://Styles/button.tres" id="2_cv6ud"]
+[ext_resource type="Texture2D" uid="uid://odynyou0n0xa" path="res://Burger Topper Assets/tjumpclear/tjump1-removebg-preview.png" id="3_pmnof"]
+[ext_resource type="Texture2D" uid="uid://h7uaaed3nm7m" path="res://Burger Topper Assets/tjumpclear/tjump2-removebg-preview.png" id="4_ju1op"]
+[ext_resource type="Texture2D" uid="uid://lx03s6op586a" path="res://Burger Topper Assets/tjumpclear/tjump3-removebg-preview.png" id="5_i55gk"]
+[ext_resource type="Texture2D" uid="uid://v7x4y5sow1si" path="res://Burger Topper Assets/tjumpclear/tjump4-removebg-preview.png" id="6_3bqxi"]
+[ext_resource type="Texture2D" uid="uid://dpvpcr0p62mei" path="res://Burger Topper Assets/tjumpclear/tjump5-removebg-preview.png" id="7_llg1j"]
+[ext_resource type="Texture2D" uid="uid://cix57hlksp8gu" path="res://Burger Topper Assets/tjumpclear/tjump6-removebg-preview.png" id="8_h6b5j"]
+[ext_resource type="Texture2D" uid="uid://lpy31pjta6ip" path="res://Burger Topper Assets/tjumpclear/tjump7-removebg-preview.png" id="9_bouj4"]
+[ext_resource type="Texture2D" uid="uid://cgjucy2t1dewd" path="res://Burger Topper Assets/tjumpclear/tjump8-removebg-preview.png" id="10_v2jmg"]
+[ext_resource type="Texture2D" uid="uid://2q3mem4qp5fi" path="res://Burger Topper Assets/tjumpclear/tjump9-removebg-preview.png" id="11_c0j4f"]
+[ext_resource type="Texture2D" uid="uid://kg7vhj6my50s" path="res://Burger Topper Assets/TravisIdle.png" id="12_22x6a"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7neop"]
 bg_color = Color(0.913725, 0.835294, 0.796078, 1)
@@ -29,55 +29,55 @@ corner_radius_bottom_left = 15
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("1_qwg7s")
+"texture": ExtResource("3_pmnof")
 }, {
 "duration": 1.0,
-"texture": ExtResource("2_ocyxb")
+"texture": ExtResource("4_ju1op")
 }, {
 "duration": 1.0,
-"texture": ExtResource("3_iykqp")
+"texture": ExtResource("5_i55gk")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_w0hn5")
+"texture": ExtResource("6_3bqxi")
 }, {
 "duration": 1.0,
-"texture": ExtResource("5_qqlqa")
+"texture": ExtResource("7_llg1j")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_2njno")
+"texture": ExtResource("8_h6b5j")
 }, {
 "duration": 1.0,
-"texture": ExtResource("7_4x4j8")
+"texture": ExtResource("9_bouj4")
 }, {
 "duration": 1.0,
-"texture": ExtResource("8_towej")
+"texture": ExtResource("10_v2jmg")
 }, {
 "duration": 1.0,
-"texture": ExtResource("9_isan8")
+"texture": ExtResource("11_c0j4f")
 }, {
 "duration": 1.0,
-"texture": ExtResource("8_towej")
+"texture": ExtResource("10_v2jmg")
 }, {
 "duration": 1.0,
-"texture": ExtResource("7_4x4j8")
+"texture": ExtResource("9_bouj4")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_2njno")
+"texture": ExtResource("8_h6b5j")
 }, {
 "duration": 1.0,
-"texture": ExtResource("5_qqlqa")
+"texture": ExtResource("7_llg1j")
 }, {
 "duration": 1.0,
-"texture": ExtResource("3_iykqp")
+"texture": ExtResource("5_i55gk")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_w0hn5")
+"texture": ExtResource("6_3bqxi")
 }, {
 "duration": 1.0,
-"texture": ExtResource("2_ocyxb")
+"texture": ExtResource("4_ju1op")
 }, {
 "duration": 1.0,
-"texture": ExtResource("1_qwg7s")
+"texture": ExtResource("3_pmnof")
 }],
 "loop": true,
 "name": &"celebrate",
@@ -85,7 +85,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("10_t8var")
+"texture": ExtResource("12_22x6a")
 }],
 "loop": true,
 "name": &"idle",
@@ -93,7 +93,7 @@ animations = [{
 }]
 
 [node name="start_screen" type="Node2D"]
-script = ExtResource("1_qbljx")
+script = ExtResource("1_m7ewq")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
@@ -124,9 +124,9 @@ offset_right = 419.0
 offset_bottom = 622.0
 theme_override_colors/font_color = Color(0.956863, 0.917647, 0.827451, 1)
 theme_override_font_sizes/font_size = 50
-theme_override_styles/normal = ExtResource("2_43euv")
-theme_override_styles/hover = ExtResource("2_43euv")
-theme_override_styles/pressed = ExtResource("2_43euv")
+theme_override_styles/normal = ExtResource("2_cv6ud")
+theme_override_styles/hover = ExtResource("2_cv6ud")
+theme_override_styles/pressed = ExtResource("2_cv6ud")
 text = "Start"
 
 [node name="quit" type="Button" parent="CanvasLayer"]
@@ -136,9 +136,9 @@ offset_right = 823.0
 offset_bottom = 622.0
 theme_override_colors/font_color = Color(0.956863, 0.917647, 0.827451, 1)
 theme_override_font_sizes/font_size = 50
-theme_override_styles/normal = ExtResource("2_43euv")
-theme_override_styles/hover = ExtResource("2_43euv")
-theme_override_styles/pressed = ExtResource("2_43euv")
+theme_override_styles/normal = ExtResource("2_cv6ud")
+theme_override_styles/hover = ExtResource("2_cv6ud")
+theme_override_styles/pressed = ExtResource("2_cv6ud")
 text = "Quit"
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CanvasLayer"]

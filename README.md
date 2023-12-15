@@ -11,5 +11,6 @@ How to play:
 Feedback:
 	Christian S.
 	- Add a progress bar for time [✓]
-	- Finish the game [X]
+	- Finish the game [✓]
 	- Change font colors to match theme [✓]
+	- Add sound effects [✓]

@@ -17,3 +17,10 @@ res://food/food_6.tscn
 res://food/food_7.tscn
 res://food/food_8.tscn
 res://burger_complete.tscn
+res://win_screen.tscn
+res://MainScenes/win_screen.tscn
+res://MainScenes/start_screen.tscn
+res://MainScenes/lose_screen.tscn
+res://README.md
+res://scripts/lose_screen.gd
+res://MainScenes/burger_complete.tscn

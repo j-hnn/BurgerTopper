@@ -44,6 +44,7 @@ func _on_food_inside():
 
 func _on_button_pressed():
 	pressed = true
+	$ButtonSound.play()
 	
 func _process(delta):
 	
@@ -56,11 +57,11 @@ func _process(delta):
 			update_food()
 			spawn_food()
 	elif pressed and not inside:
-		get_tree().change_scene_to_file("res://lose_screen.tscn")
+		get_tree().change_scene_to_file("res://MainScenes/lose_screen.tscn")
 		
 	if food_node != null:
 		if food_node.global_position.y >= food_off_marker.global_position.y:
-			get_tree().change_scene_to_file("res://lose_screen.tscn")
+			get_tree().change_scene_to_file("res://MainScenes/lose_screen.tscn")
 		
 func stack_food():
 	var food = food_scene[food_number].instantiate()
@@ -78,6 +79,7 @@ func update_food():
 			food_number = 0
 			total_stacks += 1
 			travis.play("celebrate")
+			$BurgerCompleteSound.play()
 			add_complete_burger()
 			restart_stack()
 			await get_tree().create_timer(2.7).timeout
@@ -97,7 +99,7 @@ func game_time():
 		time_left_text.text = str(sec)
 		time_left_bar.value -= 1
 	if total_stacks == 5:
-		get_tree().change_scene_to_file("res://win_screen.tscn")
+		get_tree().change_scene_to_file("res://MainScenes/win_screen.tscn")
 
 func add_complete_burger():
 	var burger = completed_Scene[0].instantiate()

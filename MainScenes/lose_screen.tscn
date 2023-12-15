@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://dmnm7pfmvptcv"]
+
+[ext_resource type="PackedScene" uid="uid://cqp3ypsu2ix72" path="res://MainScenes/start_screen.tscn" id="1_m3yq0"]
+[ext_resource type="Script" path="res://scripts/lose_screen.gd" id="2_we7qm"]
+[ext_resource type="AudioStream" uid="uid://c4mtmqq6s6ck8" path="res://Burger Topper Assets/Sounds/TravisFall.mp3" id="3_hy1m3"]
+
+[node name="lose_screen" instance=ExtResource("1_m3yq0")]
+script = ExtResource("2_we7qm")
+
+[node name="BurgerTopper" parent="CanvasLayer" index="1"]
+text = "You Lost!"
+
+[node name="start" parent="CanvasLayer" index="2"]
+text = "Play Again"
+
+[node name="LoseSound" type="AudioStreamPlayer2D" parent="." index="1"]
+stream = ExtResource("3_hy1m3")

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c4mtmqq6s6ck8"
+path="res://.godot/imported/TravisFall.mp3-b8d25e6c195741f6e1a4b4a22b0eb572.mp3str"
+
+[deps]
+
+source_file="res://Burger Topper Assets/Sounds/TravisFall.mp3"
+dest_files=["res://.godot/imported/TravisFall.mp3-b8d25e6c195741f6e1a4b4a22b0eb572.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
