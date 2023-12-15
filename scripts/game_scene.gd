@@ -11,6 +11,7 @@ extends Node2D
 @onready var completetion_bar = $CanvasLayer/Header/CompletionBar
 @onready var time_left_bar = $CanvasLayer/Header/TimeLeftBar
 @onready var time_left_text = $CanvasLayer/Header/TimeLeftText
+@onready var bun_collision_box = $BunBottom/BunCollisionBox
 @onready var timer = $Timer
 @onready var travis = $Travis
 
@@ -28,6 +29,7 @@ func _ready():
 	time_left_bar.value = start_time
 	spawn_food()
 
+# this function spawns the food
 func spawn_food():
 	pressed = false
 	inside = false
@@ -46,6 +48,7 @@ func _on_button_pressed():
 	
 func _process(delta):
 	
+	# this checks if the button has been pressed and if the food is inside the hitbox
 	var food_node = food_container.get_node("food" + str(food_number))
 	if pressed and inside:
 		if food_node != null:
@@ -57,17 +60,21 @@ func _process(delta):
 	elif pressed and not inside:
 		get_tree().change_scene_to_file("res://MainScenes/lose_screen.tscn")
 		
+	# this checks if the food is out of range
 	if food_node != null:
 		if food_node.global_position.y >= food_off_marker.global_position.y:
 			get_tree().change_scene_to_file("res://MainScenes/lose_screen.tscn")
 		
+# this function stacks the food
 func stack_food():
 	var food = food_scene[food_number].instantiate()
 	food.speed = 0
 	food.global_position.x = 247
 	food.global_position.y = stack_positions[food_number]
+	bun_collision_box.global_position.y = stack_positions[food_number]
 	stack_container.add_child(food)
 	
+# this function updates which food is spawned
 func update_food():
 	if total_stacks < 5:
 		if food_number < len(food_scene) - 1:
@@ -82,14 +89,17 @@ func update_food():
 			await get_tree().create_timer(2.7).timeout
 			travis.play("idle")
 	
+# this function restarts the stack
 func restart_stack():
 	await get_tree().create_timer(0.5).timeout
+	bun_collision_box.global_position.y = 488
 	for child in stack_container.get_children():
 		child.queue_free()
 
 func _on_timer_timeout():
 	game_time()
 	
+# this controls the timer
 func game_time():
 	if sec > 0:
 		sec -= 1
@@ -98,6 +108,7 @@ func game_time():
 	if total_stacks == 5:
 		get_tree().change_scene_to_file("res://MainScenes/battle_scene.tscn")
 
+# this function adds a burger once it has been fully stacked
 func add_complete_burger():
 	var burger = completed_Scene[0].instantiate()
 	burger.global_position = Vector2(complete_burger_x, 564)

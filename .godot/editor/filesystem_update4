@@ -17,3 +17,5 @@ res://food/food_7.tscn
 res://food/food_8.tscn
 res://FEEDBACK.txt
 res://README.md
+res://scripts/game_scene.gd
+res://scripts/burger.gd
