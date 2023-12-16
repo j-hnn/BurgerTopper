@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://dt7ifeibbcrgv"]
+
+[ext_resource type="Texture2D" uid="uid://c6yjys2k82wii" path="res://Burger Topper Assets/BurgerComplete.png" id="1_wlwt4"]
+
+[node name="burger" type="TextureRect"]
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("1_wlwt4")

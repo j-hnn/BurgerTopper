@@ -5,6 +5,9 @@
 
 [node name="win_screen" instance=ExtResource("1_ytwlb")]
 
+[node name="ColorRect" parent="CanvasLayer" index="0"]
+color = Color(0.603922, 0.364706, 0.247059, 1)
+
 [node name="BurgerTopper" parent="CanvasLayer" index="1"]
 theme_override_font_sizes/font_size = 80
 text = "YOU BEAT TRAVIS"
